@@ -1,0 +1,24 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WpfCalculatorApp.Properties" GeneratedClassName="Config">
+  <Profiles />
+  <Settings>
+    <Setting Name="Subsystem" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">WpfCalculatorApp</Value>
+    </Setting>
+    <Setting Name="Application" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">WpfCalculatorApp</Value>
+    </Setting>
+    <Setting Name="ConfigClassesPattern" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">.*ConfigSettings$</Value>
+    </Setting>
+    <Setting Name="LogConfig" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">NLog.config</Value>
+    </Setting>
+    <Setting Name="GlobalParameterPattern" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">.*GlobalParameters$</Value>
+    </Setting>
+    <Setting Name="LogConfigDebug" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">NLog.Debug.config</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

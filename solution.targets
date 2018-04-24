@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <PropertyGroup>
+        <OpenCoverFilter>+[$(AssemblyName)]* -[*]*Tests -[*]*Should -[FluentAssertions]*</OpenCoverFilter>
+
+        <BuildDir Condition="'$(BuildDir)' == ''">$(SolutionDir)deploy</BuildDir>
+        <BuildUrl Condition="'$(BuildUrl)' == ''">http://intranet.sse.schoenhofer.de/dokumente/publish/LwErfTrp/WpfCalculatorApp/builds</BuildUrl>
+
+        <!-- We allow local Deployments, cf.: https://github.com/awesome-inc/OneClickBuild#deploying-locally-vs-ci-server -->
+        <DeployFailOnBuildNotSet>false</DeployFailOnBuildNotSet>
+
+        <UseNUnit3>true</UseNUnit3>
+        <NUnitResultFormat>nunit2</NUnitResultFormat>
+        <NUnitArgs>/process:single</NUnitArgs>
+
+        <!-- disable MSBuild warnings on missing Visual Studio default rulesets -->
+        <CodeAnalysisRuleSet/>
+    </PropertyGroup>
+
+    <ItemGroup Condition="'$(SkipSolutionInfo)' != 'true'">
+        <Compile Include="$(SolutionDir)SolutionInfo.cs">
+            <Link>Properties\SolutionInfo.cs</Link>
+        </Compile>
+    </ItemGroup>
+
+    <Target Name="SetWpfCalculatorAppNugetServer" AfterTargets="UpdateAssemblyInfo" DependsOnTargets="GetVersion" BeforeTargets="Package">
+        <CreateProperty Value="$(GitVersion_SemVer)_b$(Build)">
+            <Output TaskParameter="Value" PropertyName="DeployVersion"/>
+        </CreateProperty>
+
+        <CreateProperty Value="$(BuildDir)\$(DeployVersion)">
+            <Output TaskParameter="Value" PropertyName="DeployDirBase"/>
+        </CreateProperty>
+        <CreateProperty Value="$(DeployDirBase)\$(ProjectName)">
+            <Output TaskParameter="Value" PropertyName="DeployDir"/>
+        </CreateProperty>
+        <CreateProperty Value="$(DeployDirBase)\packages">
+            <Output TaskParameter="Value" PropertyName="NuGetSourceToDeploy"/>
+        </CreateProperty>
+    </Target>
+
+    <!-- ## Automatically import project-specific overrides (place this last) -->
+    <Import Project="$(ProjectDir)\$(ProjectName).targets"
+            Condition="Exists('$(ProjectDir)\$(ProjectName).targets')"/>
+
+</Project>
