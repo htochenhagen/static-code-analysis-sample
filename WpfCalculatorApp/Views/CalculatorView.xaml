@@ -1,12 +1,17 @@
 ﻿<Window
-    x:Class="WpfCalculatorApp.MainWindow"
+    x:Class="WpfCalculatorApp.Views.CalculatorView"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:cal="http://www.caliburnproject.org"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     Title="Calculator"
-    Width="525"
-    SizeToContent="Height"
+    Width="350"
+    Height="450"
+    MinWidth="300"
+    MinHeight="425"
+    SizeToContent="WidthAndHeight"
+    WindowStartupLocation="CenterScreen"
     mc:Ignorable="d">
     <Window.Resources>
         <Style x:Key="RoundCorner" TargetType="{x:Type Button}">
@@ -15,7 +20,6 @@
             <Setter Property="Padding" Value="1" />
             <Setter Property="Margin" Value="3" />
             <Setter Property="FontSize" Value="35" />
-            <Setter Property="Height" Value="55" />
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type Button}">
@@ -85,9 +89,10 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <TextBox
+            Name="CurrentDisplayValue"
             Margin="0,0,10,0"
             HorizontalAlignment="Right"
             BorderThickness="0"
@@ -95,27 +100,30 @@
             FontWeight="Bold">
             0,0
         </TextBox>
-        <UniformGrid Grid.Row="1" Columns="4">
-            <Button Style="{StaticResource RoundCorner}">CE</Button>
-            <Button Style="{StaticResource RoundCorner}">C</Button>
-            <Button Style="{StaticResource RoundCorner}">DEL</Button>
-            <Button Style="{StaticResource RoundCorner}">%</Button>
-            <Button Style="{StaticResource RoundCorner}">7</Button>
-            <Button Style="{StaticResource RoundCorner}">8</Button>
-            <Button Style="{StaticResource RoundCorner}">9</Button>
-            <Button Style="{StaticResource RoundCorner}">X</Button>
-            <Button Style="{StaticResource RoundCorner}">4</Button>
-            <Button Style="{StaticResource RoundCorner}">5</Button>
-            <Button Style="{StaticResource RoundCorner}">6</Button>
-            <Button Style="{StaticResource RoundCorner}">-</Button>
-            <Button Style="{StaticResource RoundCorner}">1</Button>
-            <Button Style="{StaticResource RoundCorner}">2</Button>
-            <Button Style="{StaticResource RoundCorner}">3</Button>
-            <Button Style="{StaticResource RoundCorner}">+</Button>
-            <Button Style="{StaticResource RoundCorner}">+/-</Button>
-            <Button Style="{StaticResource RoundCorner}">0</Button>
-            <Button Style="{StaticResource RoundCorner}">,</Button>
-            <Button Style="{StaticResource RoundCorner}">=</Button>
+        <UniformGrid
+            Grid.Row="1"
+            Margin="5"
+            Columns="4">
+            <Button cal:Message.Attach="[Action DoClear()]" Style="{StaticResource RoundCorner}">C</Button>
+            <Button cal:Message.Attach="[Action DoPressCosinus()]" Style="{StaticResource RoundCorner}">Cos</Button>
+            <Button cal:Message.Attach="[Action DoPressSinus()]" Style="{StaticResource RoundCorner}">Sin</Button>
+            <Button cal:Message.Attach="[Action DoPressPercentageSign()]" Style="{StaticResource RoundCorner}">%</Button>
+            <Button cal:Message.Attach="[Action DoPressNumber(7)]" Style="{StaticResource RoundCorner}">7</Button>
+            <Button cal:Message.Attach="[Action DoPressNumber(8)]" Style="{StaticResource RoundCorner}">8</Button>
+            <Button cal:Message.Attach="[Action DoPressNumber(9)]" Style="{StaticResource RoundCorner}">9</Button>
+            <Button cal:Message.Attach="[Action DoPressXLetter()]" Style="{StaticResource RoundCorner}">X</Button>
+            <Button cal:Message.Attach="[Action DoPressNumber(4)]" Style="{StaticResource RoundCorner}">4</Button>
+            <Button cal:Message.Attach="[Action DoPressNumber(5)]" Style="{StaticResource RoundCorner}">5</Button>
+            <Button cal:Message.Attach="[Action DoPressNumber(6)]" Style="{StaticResource RoundCorner}">6</Button>
+            <Button cal:Message.Attach="[Action DoPressMinusSign()]" Style="{StaticResource RoundCorner}">-</Button>
+            <Button cal:Message.Attach="[Action DoPressNumber(1)]" Style="{StaticResource RoundCorner}">1</Button>
+            <Button cal:Message.Attach="[Action DoPressNumber(2)]" Style="{StaticResource RoundCorner}">2</Button>
+            <Button cal:Message.Attach="[Action DoPressNumber(3)]" Style="{StaticResource RoundCorner}">3</Button>
+            <Button cal:Message.Attach="[Action DoPressPlusSign()]" Style="{StaticResource RoundCorner}">+</Button>
+            <Button cal:Message.Attach="[Action DoPressPlusAndMinusSign()]" Style="{StaticResource RoundCorner}">+/-</Button>
+            <Button cal:Message.Attach="[Action DoPressNumber(0)]" Style="{StaticResource RoundCorner}">0</Button>
+            <Button cal:Message.Attach="[Action DoPressDecimalSeparator()]" Style="{StaticResource RoundCorner}">,</Button>
+            <Button cal:Message.Attach="[Action DoPressEqualSign()]" Style="{StaticResource RoundCorner}">=</Button>
         </UniformGrid>
     </Grid>
 </Window>
