@@ -40,6 +40,16 @@
         </CreateProperty>
     </Target>
 
+  <Target Name="TranslateCoverageXml" AfterTargets="CoverageReport">
+    <ItemGroup>
+      <CoverageFiles Include="C:\DEVSSE\git\static-code-analysis-sample\testresults\*.Coverage.xml" />
+    </ItemGroup>
+
+    <XslTransformation XmlInputPaths="%(CoverageFiles.Identity)"
+      XslInputPath="$(SolutionDir)\opencover_to_ncover.xslt"
+      OutputPaths="C:\DEVSSE\git\static-code-analysis-sample\testresults\%(CoverageFiles.FileName).ncover.xml" />
+  </Target>
+
     <!-- ## Automatically import project-specific overrides (place this last) -->
     <Import Project="$(ProjectDir)\$(ProjectName).targets"
             Condition="Exists('$(ProjectDir)\$(ProjectName).targets')"/>
