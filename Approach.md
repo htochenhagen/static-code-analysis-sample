@@ -3,7 +3,7 @@
 - Vorteile Statischer Codeanalyse
 - Abgrenzung zur dynamischer Codeanalyse
 
-## NDepend
+## NDepend (Parallel aufmachen)
 - Begriffe
     - Technische Schuld
     - Code Smell
