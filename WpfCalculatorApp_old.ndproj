@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <NDepend AppName="WpfCalculatorApp" Platform="DotNet" FileWrittenByProductVersion="2017.3.2.9010">
-  <OutputDir KeepXmlFiles="False">C:\DEVSSE\git\static-code-analysis-sample\NDependOut</OutputDir>
+  <OutputDir KeepXmlFiles="False">C:\Users\htochenhagen\AppData\Local\Temp\NDependTemporaryProject\NDependOut5</OutputDir>
   <Assemblies>
     <Name>WpfCalculatorApp</Name>
   </Assemblies>
@@ -11,14 +11,16 @@
     <Name>WindowsBase</Name>
     <Name>NEdifis</Name>
     <Name>nunit.framework</Name>
+    <Name>NLog</Name>
     <Name>System.Xaml</Name>
     <Name>Caliburn.Micro</Name>
     <Name>Caliburn.Micro.Platform</Name>
     <Name>Autofac</Name>
-    <Name>System.Core</Name>
-    <Name>PresentationCore</Name>
+    <Name>System.Deployment</Name>
     <Name>FluentAssertions</Name>
     <Name>FluentAssertions.Core</Name>
+    <Name>System.Core</Name>
+    <Name>PresentationCore</Name>
   </FrameworkAssemblies>
   <Dirs>
     <Dir>C:\Windows\Microsoft.NET\Framework\v4.0.30319</Dir>
@@ -29,7 +31,7 @@
   <MergeCodeGeneratedByCompiler>True</MergeCodeGeneratedByCompiler>
   <Report Kind="0" SectionsEnabled="110591" XslPath="" Flags="261120" />
   <BuildComparisonSetting ProjectMode="CurrentProject" BuildMode="NDaysAgoAnalysisResult" ProjectFileToCompareWith="" BuildFileToCompareWith="" NDaysAgo="30" />
-  <BaselineInUISetting ProjectMode="CurrentProject" BuildMode="NDaysAgoAnalysisResult" ProjectFileToCompareWith="" BuildFileToCompareWith="" NDaysAgo="30" />
+  <BaselineInUISetting ProjectMode="CurrentProject" BuildMode="NDaysAgoAnalysisResult" ProjectFileToCompareWith="C:\DEVSSE\git\static-code-analysis-sample\WpfCalculatorApp.ndproj" BuildFileToCompareWith="C:\Users\htochenhagen\AppData\Local\Temp\NDependTemporaryProject\NDependOut5\NDependAnalysisResult_WpfCalculatorApp_2018Apr25_14h39.ndar" NDaysAgo="30" />
   <CoverageFiles CoverageDir="" UncoverableAttribute="">
     <CoverageFile>C:\DEVSSE\git\static-code-analysis-sample\testresults\WpfCalculatorApp.Coverage.dotcover.xml</CoverageFile>
   </CoverageFiles>

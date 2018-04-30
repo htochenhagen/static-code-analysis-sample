@@ -9,60 +9,6 @@ namespace WpfCalculatorApp
     public static class Extensions
     {
 
-        public static string GetCompany(this Assembly assembly)
-        {
-            var attr = GetAttribute<AssemblyCompanyAttribute>(assembly);
-            return attr != null ? attr.Company : string.Empty;
-        }
-
-        public static string GetCopyright(this Assembly assembly)
-        {
-            var attr = GetAttribute<AssemblyCopyrightAttribute>(assembly);
-            return attr != null ? attr.Copyright : string.Empty;
-        }
-
-        public static string GetDescription(this Assembly assembly)
-        {
-            var attr = GetAttribute<AssemblyDescriptionAttribute>(assembly);
-            return attr != null ? attr.Description : string.Empty;
-        }
-
-        public static string GetProductVersion(this Assembly assembly)
-        {
-            var attr = GetAttribute<AssemblyInformationalVersionAttribute>(assembly);
-            if (!string.IsNullOrEmpty(attr?.InformationalVersion))
-                return attr.InformationalVersion;
-            return GetFileVersion(assembly);
-        }
-
-        public static string GetFileVersion(this Assembly assembly)
-        {
-            var attr = GetAttribute<AssemblyFileVersionAttribute>(assembly);
-            return !string.IsNullOrEmpty(attr?.Version) ? attr.Version : GetVersion(assembly);
-        }
-
-        public static string GetVersion(this Assembly assembly)
-        {
-            return assembly.GetName().Version.ToString();
-        }
-
-        public static string GetLocation(this Assembly assembly)
-        {
-            return new Uri(assembly.CodeBase).LocalPath;
-        }
-
-        public static string GetProduct(this Assembly assembly)
-        {
-            var attr = GetAttribute<AssemblyProductAttribute>(assembly);
-            return attr != null ? attr.Product : string.Empty;
-        }
-
-        public static T GetAttribute<T>(this Assembly assembly) where T : Attribute
-        {
-            var attrT = assembly.GetCustomAttributes(typeof(T), false);
-            return attrT.Length > 0 ? attrT[0] as T : null;
-        }
-
         public static string GetErrorMessage(this Exception ex, string message = null, bool stackTrace = true)
         {
             var prefix = string.IsNullOrEmpty(message) ? string.Empty : message + ": ";

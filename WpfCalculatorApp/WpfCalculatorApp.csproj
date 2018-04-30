@@ -123,15 +123,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="AppInfo.cs" />
     <Compile Include="Bootstrapping\Bootstrapper.cs" />
     <Compile Include="Bootstrapping\Modules\ApplicationModule.cs" />
-    <Compile Include="ClickOnce.cs" />
-    <Compile Include="ClickOnce_Should.cs" />
-    <Compile Include="DefaultModeDetector.cs" />
-    <Compile Include="IModeDetector.cs" />
-    <Compile Include="ISaveSettings.cs" />
-    <Compile Include="ModeDetector.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Program_Should.cs" />
     <Compile Include="Properties\Config.cs" />
@@ -169,8 +162,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="NLog.config" />
-    <None Include="NLog.Debug.config" />
     <None Include="packages.config" />
     <None Include="Properties\Config.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
