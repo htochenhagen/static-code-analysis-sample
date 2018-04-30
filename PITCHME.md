@@ -2,7 +2,7 @@
 
 NDepend is a static analysis tool for .NET managed code
 
----?image=/images/full_logo.jpg&size=auto 5%
+![NDepend Logo](/images/full_logo.jpg)
 
 ---
 
