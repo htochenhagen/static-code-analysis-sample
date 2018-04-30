@@ -141,7 +141,7 @@
       <DependentUpon>Config.settings</DependentUpon>
     </Compile>
     <Compile Include="Properties\Config_Should.cs" />
-    <Compile Include="ViewModels\CalculatorException.cs" />
+    <Compile Include="CalculatorException.cs" />
     <Compile Include="ViewModels\CalculatorViewModel_Should.cs" />
     <Compile Include="Views\CalculatorView.xaml.cs">
       <DependentUpon>CalculatorView.xaml</DependentUpon>
