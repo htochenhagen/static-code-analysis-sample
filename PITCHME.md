@@ -1,4 +1,4 @@
-## Measure code quality with <span style="color: #e49436">NDepend</span>
+## Measure code quality with <span style="color: #FE9D0E">NDepend</span>
 
 NDepend is a static analysis tool 
 
