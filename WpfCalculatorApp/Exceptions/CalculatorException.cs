@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace WpfCalculatorApp.ViewModels
+namespace WpfCalculatorApp.Exceptions
 {
-    class CalculatorException : ApplicationException
+    public class CalculatorException : ApplicationException
     {
         public CalculatorException()
         {

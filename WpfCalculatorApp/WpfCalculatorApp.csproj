@@ -125,6 +125,22 @@
     </Compile>
     <Compile Include="Bootstrapping\Bootstrapper.cs" />
     <Compile Include="Bootstrapping\Modules\ApplicationModule.cs" />
+    <Compile Include="Core\Calculator.cs" />
+    <Compile Include="Core\CalculatorContext.cs" />
+    <Compile Include="Exceptions\CalculatorContextException.cs" />
+    <Compile Include="Helpers\CalculatorHelper.cs" />
+    <Compile Include="Interfaces\ICalculatorHelper.cs" />
+    <Compile Include="Interfaces\ICalculationContext.cs" />
+    <Compile Include="Interfaces\ICalculator.cs" />
+    <Compile Include="Interfaces\IOperation.cs" />
+    <Compile Include="Interfaces\IBinaryOperation.cs" />
+    <Compile Include="Interfaces\IUnaryOperation.cs" />
+    <Compile Include="Core\Operations\DivisionOperation.cs" />
+    <Compile Include="Core\Operations\MultiplicationOperation.cs" />
+    <Compile Include="Core\Operations\SubstractionOperation.cs" />
+    <Compile Include="Core\Operations\AdditionOperation.cs" />
+    <Compile Include="Core\Operations\CosineOperation.cs" />
+    <Compile Include="Core\Operations\SineOperation.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Program_Should.cs" />
     <Compile Include="Properties\Config.cs" />
@@ -134,7 +150,8 @@
       <DependentUpon>Config.settings</DependentUpon>
     </Compile>
     <Compile Include="Properties\Config_Should.cs" />
-    <Compile Include="CalculatorException.cs" />
+    <Compile Include="Exceptions\CalculatorException.cs" />
+    <Compile Include="Enums\CalculatorOperator.cs" />
     <Compile Include="ViewModels\CalculatorViewModel_Should.cs" />
     <Compile Include="Views\CalculatorView.xaml.cs">
       <DependentUpon>CalculatorView.xaml</DependentUpon>
@@ -143,8 +160,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ViewModels\CalculatorViewModel.cs" />
-    <Compile Include="Extensions.cs" />
-    <Compile Include="ICalculatorViewModel.cs" />
+    <Compile Include="Extensions\Extensions.cs" />
+    <Compile Include="Interfaces\ICalculatorViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -177,6 +194,9 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Operations\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

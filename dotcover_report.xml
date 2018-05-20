@@ -1,22 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Root CoveredStatements="51" TotalStatements="576" CoveragePercent="9" ReportType="NDependXML" DotCoverVersion="2018.1">
-  <Assembly Name="WpfCalculatorApp" CoveredStatements="51" TotalStatements="576" CoveragePercent="9">
-    <Namespace Name="WpfCalculatorApp" CoveredStatements="0" TotalStatements="134" CoveragePercent="0">
+<Root CoveredStatements="211" TotalStatements="582" CoveragePercent="36" ReportType="NDependXML" DotCoverVersion="2018.1">
+  <Assembly Name="WpfCalculatorApp" CoveredStatements="211" TotalStatements="582" CoveragePercent="36">
+    <Namespace Name="WpfCalculatorApp" CoveredStatements="0" TotalStatements="61" CoveragePercent="0">
       <Type Name="App" CoveredStatements="0" TotalStatements="26" CoveragePercent="0">
         <Type Name="&lt;&gt;c" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
-          <Method Name="&lt;OnStartup&gt;b__1_0(Object,DispatcherUnhandledExceptionEventArgs)" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" FirstStatementLine="38" />
+          <Method Name="&lt;OnStartup&gt;b__1_0(Object,DispatcherUnhandledExceptionEventArgs)" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" FirstStatementLine="39" />
         </Type>
-        <Method Name=".ctor()" CoveredStatements="0" TotalStatements="8" CoveragePercent="0" FirstStatementLine="15" />
+        <Method Name=".ctor()" CoveredStatements="0" TotalStatements="8" CoveragePercent="0" FirstStatementLine="16" />
         <Method Name="InitializeComponent()" CoveredStatements="0" TotalStatements="7" CoveragePercent="0" FirstStatementLine="49" />
-        <Method Name="OnStartup(StartupEventArgs)" CoveredStatements="0" TotalStatements="8" CoveragePercent="0" FirstStatementLine="32" />
-      </Type>
-      <Type Name="Extensions" CoveredStatements="0" TotalStatements="73" CoveragePercent="0">
-        <Method Name="AsError&lt;TPreferredException&gt;(AggregateException)" CoveredStatements="0" TotalStatements="18" CoveragePercent="0" FirstStatementLine="49" />
-        <Method Name="BringToFront(Window)" CoveredStatements="0" TotalStatements="9" CoveragePercent="0" FirstStatementLine="113" />
-        <Method Name="GetErrorMessage(Exception,String,Boolean)" CoveredStatements="0" TotalStatements="6" CoveragePercent="0" FirstStatementLine="13" />
-        <Method Name="GetErrorMsg(Exception,Boolean)" CoveredStatements="0" TotalStatements="11" CoveragePercent="0" FirstStatementLine="24" />
-        <Method Name="IsFatal(Exception)" CoveredStatements="0" TotalStatements="20" CoveragePercent="0" FirstStatementLine="76" />
-        <Method Name="Unwrap(Exception)" CoveredStatements="0" TotalStatements="9" CoveragePercent="0" FirstStatementLine="36" />
+        <Method Name="OnStartup(StartupEventArgs)" CoveredStatements="0" TotalStatements="8" CoveragePercent="0" FirstStatementLine="33" />
       </Type>
       <Type Name="GitVersionInformation" CoveredStatements="0" TotalStatements="24" CoveragePercent="0">
         <Method Name=".cctor()" CoveredStatements="0" TotalStatements="24" CoveragePercent="0" FirstStatementLine="24" />
@@ -28,21 +20,118 @@
     <Namespace Name="WpfCalculatorApp.Bootstrapping" CoveredStatements="0" TotalStatements="51" CoveragePercent="0">
       <Type Name="Bootstrapper" CoveredStatements="0" TotalStatements="51" CoveragePercent="0">
         <Type Name="&lt;&gt;c__DisplayClass3_0" CoveredStatements="0" TotalStatements="1" CoveragePercent="0">
-          <Method Name="&lt;ConfigureModules&gt;b__0(IModule)" CoveredStatements="0" TotalStatements="1" CoveragePercent="0" FirstStatementLine="42" />
+          <Method Name="&lt;ConfigureModules&gt;b__0(IModule)" CoveredStatements="0" TotalStatements="1" CoveragePercent="0" FirstStatementLine="43" />
         </Type>
-        <Method Name=".ctor()" CoveredStatements="0" TotalStatements="4" CoveragePercent="0" FirstStatementLine="18" />
-        <Method Name="BuildUp(Object)" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" FirstStatementLine="80" />
-        <Method Name="Configure()" CoveredStatements="0" TotalStatements="5" CoveragePercent="0" FirstStatementLine="24" />
-        <Method Name="ConfigureModules(ContainerBuilder)" CoveredStatements="0" TotalStatements="11" CoveragePercent="0" FirstStatementLine="33" />
-        <Method Name="GetAllInstances(Type)" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" FirstStatementLine="75" />
-        <Method Name="GetInstance(Type,String)" CoveredStatements="0" TotalStatements="14" CoveragePercent="0" FirstStatementLine="56" />
-        <Method Name="OnStartup(Object,StartupEventArgs)" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" FirstStatementLine="51" />
-        <Method Name="SafeBuild(ContainerBuilder)" CoveredStatements="0" TotalStatements="7" CoveragePercent="0" FirstStatementLine="85" />
+        <Method Name=".ctor()" CoveredStatements="0" TotalStatements="4" CoveragePercent="0" FirstStatementLine="19" />
+        <Method Name="BuildUp(Object)" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" FirstStatementLine="81" />
+        <Method Name="Configure()" CoveredStatements="0" TotalStatements="5" CoveragePercent="0" FirstStatementLine="25" />
+        <Method Name="ConfigureModules(ContainerBuilder)" CoveredStatements="0" TotalStatements="11" CoveragePercent="0" FirstStatementLine="34" />
+        <Method Name="GetAllInstances(Type)" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" FirstStatementLine="76" />
+        <Method Name="GetInstance(Type,String)" CoveredStatements="0" TotalStatements="14" CoveragePercent="0" FirstStatementLine="57" />
+        <Method Name="OnStartup(Object,StartupEventArgs)" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" FirstStatementLine="52" />
+        <Method Name="SafeBuild(ContainerBuilder)" CoveredStatements="0" TotalStatements="7" CoveragePercent="0" FirstStatementLine="86" />
       </Type>
     </Namespace>
-    <Namespace Name="WpfCalculatorApp.Bootstrapping.Modules" CoveredStatements="0" TotalStatements="5" CoveragePercent="0">
-      <Type Name="ApplicationModule" CoveredStatements="0" TotalStatements="5" CoveragePercent="0">
-        <Method Name="Load(ContainerBuilder)" CoveredStatements="0" TotalStatements="5" CoveragePercent="0" FirstStatementLine="10" />
+    <Namespace Name="WpfCalculatorApp.Bootstrapping.Modules" CoveredStatements="0" TotalStatements="8" CoveragePercent="0">
+      <Type Name="ApplicationModule" CoveredStatements="0" TotalStatements="8" CoveragePercent="0">
+        <Method Name="Load(ContainerBuilder)" CoveredStatements="0" TotalStatements="8" CoveragePercent="0" FirstStatementLine="13" />
+      </Type>
+    </Namespace>
+    <Namespace Name="WpfCalculatorApp.Core" CoveredStatements="79" TotalStatements="96" CoveragePercent="82">
+      <Type Name="Calculator" CoveredStatements="54" TotalStatements="69" CoveragePercent="78">
+        <Type Name="&lt;&gt;c" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <Method Name="&lt;get_Operations&gt;b__2_0(IUnaryOperation)" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" FirstStatementLine="17" />
+          <Method Name="&lt;get_Operations&gt;b__2_1(IBinaryOperation)" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" FirstStatementLine="17" />
+        </Type>
+        <Method Name=".ctor(ICalculationContext)" CoveredStatements="6" TotalStatements="6" CoveragePercent="100" FirstStatementLine="20" />
+        <Method Name="&lt;GetOperation&gt;b__21_0(IOperation)" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" FirstStatementLine="104" />
+        <Method Name="AddBinaryOperation(IBinaryOperation)" CoveredStatements="6" TotalStatements="6" CoveragePercent="100" FirstStatementLine="58" />
+        <Method Name="AddUnaryOperation(IUnaryOperation)" CoveredStatements="6" TotalStatements="6" CoveragePercent="100" FirstStatementLine="50" />
+        <Method Name="Calculate()" CoveredStatements="10" TotalStatements="14" CoveragePercent="71" FirstStatementLine="66" />
+        <Method Name="get_BinaryOperations()" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" FirstStatementLine="21" />
+        <Method Name="get_CalculationContext()" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" FirstStatementLine="19" />
+        <Method Name="get_IsBinaryOperation()" CoveredStatements="5" TotalStatements="6" CoveragePercent="83" FirstStatementLine="39" />
+        <Method Name="get_IsUnaryOperation()" CoveredStatements="0" TotalStatements="6" CoveragePercent="0" FirstStatementLine="26" />
+        <Method Name="get_Operations()" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" FirstStatementLine="17" />
+        <Method Name="get_UnaryOperations()" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" FirstStatementLine="20" />
+        <Method Name="GetOperation()" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" FirstStatementLine="103" />
+        <Method Name="Reset()" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" FirstStatementLine="85" />
+        <Method Name="Validate()" CoveredStatements="7" TotalStatements="11" CoveragePercent="64" FirstStatementLine="90" />
+      </Type>
+      <Type Name="CalculatorContext" CoveredStatements="25" TotalStatements="27" CoveragePercent="93">
+        <Method Name=".ctor()" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" FirstStatementLine="12" />
+        <Method Name="get_FirstOperand()" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" FirstStatementLine="29" />
+        <Method Name="get_Operator()" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" FirstStatementLine="19" />
+        <Method Name="get_SecondOperand()" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" FirstStatementLine="30" />
+        <Method Name="Reset()" CoveredStatements="11" TotalStatements="11" CoveragePercent="100" FirstStatementLine="33" />
+        <Method Name="set_FirstOperand(Double)" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" FirstStatementLine="29" />
+        <Method Name="set_Operator(CalculatorOperator)" CoveredStatements="5" TotalStatements="7" CoveragePercent="71" FirstStatementLine="21" />
+        <Method Name="set_SecondOperand(Nullable&lt;Double&gt;)" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" FirstStatementLine="30" />
+      </Type>
+    </Namespace>
+    <Namespace Name="WpfCalculatorApp.Core.Operations" CoveredStatements="30" TotalStatements="51" CoveragePercent="59">
+      <Type Name="AdditionOperation" CoveredStatements="8" TotalStatements="8" CoveragePercent="100">
+        <Method Name=".ctor()" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" FirstStatementLine="9" />
+        <Method Name="Calculate(Double,Double)" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" FirstStatementLine="17" />
+        <Method Name="get_Operator()" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" FirstStatementLine="14" />
+      </Type>
+      <Type Name="CosineOperation" CoveredStatements="5" TotalStatements="8" CoveragePercent="63">
+        <Method Name=".ctor()" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" FirstStatementLine="9" />
+        <Method Name="Calculate(Double)" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" FirstStatementLine="17" />
+        <Method Name="get_Operator()" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" FirstStatementLine="14" />
+      </Type>
+      <Type Name="DivisionOperation" CoveredStatements="4" TotalStatements="11" CoveragePercent="36">
+        <Method Name=".ctor()" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" FirstStatementLine="10" />
+        <Method Name="Calculate(Double,Double)" CoveredStatements="0" TotalStatements="6" CoveragePercent="0" FirstStatementLine="18" />
+        <Method Name="get_Operator()" CoveredStatements="0" TotalStatements="1" CoveragePercent="0" FirstStatementLine="15" />
+      </Type>
+      <Type Name="MultiplicationOperation" CoveredStatements="4" TotalStatements="8" CoveragePercent="50">
+        <Method Name=".ctor()" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" FirstStatementLine="9" />
+        <Method Name="Calculate(Double,Double)" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" FirstStatementLine="17" />
+        <Method Name="get_Operator()" CoveredStatements="0" TotalStatements="1" CoveragePercent="0" FirstStatementLine="14" />
+      </Type>
+      <Type Name="SineOperation" CoveredStatements="5" TotalStatements="8" CoveragePercent="63">
+        <Method Name=".ctor()" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" FirstStatementLine="9" />
+        <Method Name="Calculate(Double)" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" FirstStatementLine="17" />
+        <Method Name="get_Operator()" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" FirstStatementLine="14" />
+      </Type>
+      <Type Name="SubstractionOperation" CoveredStatements="4" TotalStatements="8" CoveragePercent="50">
+        <Method Name=".ctor()" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" FirstStatementLine="9" />
+        <Method Name="Calculate(Double,Double)" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" FirstStatementLine="17" />
+        <Method Name="get_Operator()" CoveredStatements="0" TotalStatements="1" CoveragePercent="0" FirstStatementLine="14" />
+      </Type>
+    </Namespace>
+    <Namespace Name="WpfCalculatorApp.Exceptions" CoveredStatements="0" TotalStatements="18" CoveragePercent="0">
+      <Type Name="CalculatorContextException" CoveredStatements="0" TotalStatements="9" CoveragePercent="0">
+        <Method Name=".ctor()" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" FirstStatementLine="7" />
+        <Method Name=".ctor(String)" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" FirstStatementLine="12" />
+        <Method Name=".ctor(String,Exception)" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" FirstStatementLine="17" />
+      </Type>
+      <Type Name="CalculatorException" CoveredStatements="0" TotalStatements="9" CoveragePercent="0">
+        <Method Name=".ctor()" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" FirstStatementLine="7" />
+        <Method Name=".ctor(String)" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" FirstStatementLine="12" />
+        <Method Name=".ctor(String,Exception)" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" FirstStatementLine="17" />
+      </Type>
+    </Namespace>
+    <Namespace Name="WpfCalculatorApp.Extensions" CoveredStatements="0" TotalStatements="73" CoveragePercent="0">
+      <Type Name="Extensions" CoveredStatements="0" TotalStatements="73" CoveragePercent="0">
+        <Method Name="AsError&lt;TPreferredException&gt;(AggregateException)" CoveredStatements="0" TotalStatements="18" CoveragePercent="0" FirstStatementLine="49" />
+        <Method Name="BringToFront(Window)" CoveredStatements="0" TotalStatements="9" CoveragePercent="0" FirstStatementLine="113" />
+        <Method Name="GetErrorMessage(Exception,String,Boolean)" CoveredStatements="0" TotalStatements="6" CoveragePercent="0" FirstStatementLine="13" />
+        <Method Name="GetErrorMsg(Exception,Boolean)" CoveredStatements="0" TotalStatements="11" CoveragePercent="0" FirstStatementLine="24" />
+        <Method Name="IsFatal(Exception)" CoveredStatements="0" TotalStatements="20" CoveragePercent="0" FirstStatementLine="76" />
+        <Method Name="Unwrap(Exception)" CoveredStatements="0" TotalStatements="9" CoveragePercent="0" FirstStatementLine="36" />
+      </Type>
+    </Namespace>
+    <Namespace Name="WpfCalculatorApp.Helpers" CoveredStatements="38" TotalStatements="55" CoveragePercent="69">
+      <Type Name="CalculatorHelper" CoveredStatements="38" TotalStatements="55" CoveragePercent="69">
+        <Method Name="FormatDisplayValue(Double)" CoveredStatements="5" TotalStatements="5" CoveragePercent="100" FirstStatementLine="84" />
+        <Method Name="GetDecimalSeparatorPositionOfString(String)" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" FirstStatementLine="45" />
+        <Method Name="GetNumberOfDecimalPlaces(String)" CoveredStatements="9" TotalStatements="9" CoveragePercent="100" FirstStatementLine="56" />
+        <Method Name="HandleCalculatorErrors(Action)" CoveredStatements="5" TotalStatements="17" CoveragePercent="29" FirstStatementLine="15" />
+        <Method Name="ParseDisplayValue(String)" CoveredStatements="7" TotalStatements="9" CoveragePercent="78" FirstStatementLine="68" />
+        <Method Name="RemoveNumberGroupSeparator(String)" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" FirstStatementLine="51" />
+        <Method Name="SetupCalculator(ICalculator)" CoveredStatements="8" TotalStatements="8" CoveragePercent="100" FirstStatementLine="35" />
       </Type>
     </Namespace>
     <Namespace Name="WpfCalculatorApp.Properties" CoveredStatements="19" TotalStatements="43" CoveragePercent="44">
@@ -67,48 +156,37 @@
         <Method Name="get_Default()" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" FirstStatementLine="25" />
       </Type>
     </Namespace>
-    <Namespace Name="WpfCalculatorApp.ViewModels" CoveredStatements="32" TotalStatements="338" CoveragePercent="9">
-      <Type Name="CalculatorException" CoveredStatements="0" TotalStatements="9" CoveragePercent="0">
-        <Method Name=".ctor()" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" FirstStatementLine="7" />
-        <Method Name=".ctor(String)" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" FirstStatementLine="12" />
-        <Method Name=".ctor(String,Exception)" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" FirstStatementLine="17" />
-      </Type>
-      <Type Name="CalculatorViewModel" CoveredStatements="32" TotalStatements="329" CoveragePercent="10">
-        <Method Name=".ctor()" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" FirstStatementLine="34" />
-        <Method Name="Calculate(CalculatorOperator,OperationType,Double,Nullable&lt;Double&gt;)" CoveredStatements="0" TotalStatements="31" CoveragePercent="0" FirstStatementLine="222" />
-        <Method Name="CalculateBinaryOperation(CalculatorOperator,Double,Double)" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" FirstStatementLine="217" />
-        <Method Name="CalculateUnaryOperation(CalculatorOperator,Double)" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" FirstStatementLine="212" />
-        <Method Name="DoClear()" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" FirstStatementLine="477" />
-        <Method Name="DoPressCosinus()" CoveredStatements="0" TotalStatements="13" CoveragePercent="0" FirstStatementLine="180" />
-        <Method Name="DoPressDecimalSeparator()" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" FirstStatementLine="79" />
-        <Method Name="DoPressEqualSign()" CoveredStatements="0" TotalStatements="13" CoveragePercent="0" FirstStatementLine="164" />
-        <Method Name="DoPressMinusSign()" CoveredStatements="0" TotalStatements="13" CoveragePercent="0" FirstStatementLine="100" />
-        <Method Name="DoPressNumber(String)" CoveredStatements="0" TotalStatements="13" CoveragePercent="0" FirstStatementLine="63" />
-        <Method Name="DoPressPercentageSign()" CoveredStatements="0" TotalStatements="13" CoveragePercent="0" FirstStatementLine="148" />
-        <Method Name="DoPressPlusAndMinusSign()" CoveredStatements="0" TotalStatements="13" CoveragePercent="0" FirstStatementLine="116" />
-        <Method Name="DoPressPlusSign()" CoveredStatements="0" TotalStatements="13" CoveragePercent="0" FirstStatementLine="84" />
-        <Method Name="DoPressSinus()" CoveredStatements="0" TotalStatements="13" CoveragePercent="0" FirstStatementLine="196" />
-        <Method Name="DoPressXLetter()" CoveredStatements="0" TotalStatements="13" CoveragePercent="0" FirstStatementLine="132" />
-        <Method Name="get_CurrentDisplayValue()" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" FirstStatementLine="44" />
-        <Method Name="get_LastDisplayValue()" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" FirstStatementLine="54" />
-        <Method Name="get_Operator()" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" FirstStatementLine="39" />
-        <Method Name="get_Type()" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" FirstStatementLine="40" />
-        <Method Name="GetDecimalSeparatorPositionOfString(String)" CoveredStatements="0" TotalStatements="4" CoveragePercent="0" FirstStatementLine="470" />
-        <Method Name="HandleAddition()" CoveredStatements="0" TotalStatements="14" CoveragePercent="0" FirstStatementLine="343" />
-        <Method Name="HandleCalculation()" CoveredStatements="0" TotalStatements="32" CoveragePercent="0" FirstStatementLine="267" />
-        <Method Name="HandleCosine()" CoveredStatements="0" TotalStatements="9" CoveragePercent="0" FirstStatementLine="441" />
-        <Method Name="HandleDecimalSeparatorInput()" CoveredStatements="0" TotalStatements="6" CoveragePercent="0" FirstStatementLine="335" />
-        <Method Name="HandleDivision()" CoveredStatements="0" TotalStatements="14" CoveragePercent="0" FirstStatementLine="408" />
-        <Method Name="HandleMultiplication()" CoveredStatements="0" TotalStatements="14" CoveragePercent="0" FirstStatementLine="386" />
-        <Method Name="HandleNegation()" CoveredStatements="0" TotalStatements="6" CoveragePercent="0" FirstStatementLine="429" />
-        <Method Name="HandleNumberInput(String)" CoveredStatements="0" TotalStatements="18" CoveragePercent="0" FirstStatementLine="311" />
-        <Method Name="HandleSine()" CoveredStatements="0" TotalStatements="9" CoveragePercent="0" FirstStatementLine="455" />
-        <Method Name="HandleSubstraction()" CoveredStatements="0" TotalStatements="14" CoveragePercent="0" FirstStatementLine="365" />
-        <Method Name="Reset()" CoveredStatements="7" TotalStatements="7" CoveragePercent="100" FirstStatementLine="482" />
-        <Method Name="set_CurrentDisplayValue(String)" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" FirstStatementLine="46" />
-        <Method Name="set_LastDisplayValue(Nullable&lt;Double&gt;)" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" FirstStatementLine="56" />
-        <Method Name="set_Operator(CalculatorOperator)" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" FirstStatementLine="39" />
-        <Method Name="set_Type(OperationType)" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" FirstStatementLine="40" />
+    <Namespace Name="WpfCalculatorApp.ViewModels" CoveredStatements="45" TotalStatements="121" CoveragePercent="37">
+      <Type Name="CalculatorViewModel" CoveredStatements="45" TotalStatements="121" CoveragePercent="37">
+        <Type Name="&lt;&gt;c__DisplayClass12_0" CoveredStatements="0" TotalStatements="12" CoveragePercent="0">
+          <Method Name="&lt;DoPressNumber&gt;b__0()" CoveredStatements="0" TotalStatements="12" CoveragePercent="0" FirstStatementLine="57" />
+        </Type>
+        <Method Name=".ctor(ICalculator,ICalculatorHelper)" CoveredStatements="7" TotalStatements="7" CoveragePercent="100" FirstStatementLine="21" />
+        <Method Name="&lt;Calculate&gt;b__23_0()" CoveredStatements="9" TotalStatements="13" CoveragePercent="69" FirstStatementLine="179" />
+        <Method Name="&lt;DoPressCosinus&gt;b__20_0()" CoveredStatements="0" TotalStatements="6" CoveragePercent="0" FirstStatementLine="148" />
+        <Method Name="&lt;DoPressMinusSign&gt;b__15_0()" CoveredStatements="0" TotalStatements="5" CoveragePercent="0" FirstStatementLine="95" />
+        <Method Name="&lt;DoPressPercentageSign&gt;b__18_0()" CoveredStatements="0" TotalStatements="5" CoveragePercent="0" FirstStatementLine="132" />
+        <Method Name="&lt;DoPressPlusAndMinusSign&gt;b__16_0()" CoveredStatements="0" TotalStatements="6" CoveragePercent="0" FirstStatementLine="106" />
+        <Method Name="&lt;DoPressPlusSign&gt;b__14_0()" CoveredStatements="5" TotalStatements="5" CoveragePercent="100" FirstStatementLine="84" />
+        <Method Name="&lt;DoPressSinus&gt;b__21_0()" CoveredStatements="0" TotalStatements="6" CoveragePercent="0" FirstStatementLine="160" />
+        <Method Name="&lt;DoPressXLetter&gt;b__17_0()" CoveredStatements="0" TotalStatements="5" CoveragePercent="0" FirstStatementLine="121" />
+        <Method Name="Calculate()" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" FirstStatementLine="177" />
+        <Method Name="DoPressClear()" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" FirstStatementLine="170" />
+        <Method Name="DoPressCosinus()" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" FirstStatementLine="146" />
+        <Method Name="DoPressDecimalSeparator()" CoveredStatements="0" TotalStatements="6" CoveragePercent="0" FirstStatementLine="74" />
+        <Method Name="DoPressEqualSign()" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" FirstStatementLine="141" />
+        <Method Name="DoPressMinusSign()" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" FirstStatementLine="93" />
+        <Method Name="DoPressNumber(String)" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" FirstStatementLine="55" />
+        <Method Name="DoPressPercentageSign()" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" FirstStatementLine="130" />
+        <Method Name="DoPressPlusAndMinusSign()" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" FirstStatementLine="104" />
+        <Method Name="DoPressPlusSign()" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" FirstStatementLine="82" />
+        <Method Name="DoPressSinus()" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" FirstStatementLine="158" />
+        <Method Name="DoPressXLetter()" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" FirstStatementLine="119" />
+        <Method Name="get_Calculator()" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" FirstStatementLine="45" />
+        <Method Name="get_CalculatorHelper()" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" FirstStatementLine="46" />
+        <Method Name="get_CurrentDisplayValue()" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" FirstStatementLine="37" />
+        <Method Name="Reset()" CoveredStatements="5" TotalStatements="5" CoveragePercent="100" FirstStatementLine="198" />
+        <Method Name="set_CurrentDisplayValue(String)" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" FirstStatementLine="39" />
       </Type>
     </Namespace>
     <Namespace Name="WpfCalculatorApp.Views" CoveredStatements="0" TotalStatements="5" CoveragePercent="0">

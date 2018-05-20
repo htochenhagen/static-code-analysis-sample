@@ -4,7 +4,7 @@ using System.Reflection;
 using System.Threading;
 using System.Windows;
 
-namespace WpfCalculatorApp
+namespace WpfCalculatorApp.Extensions
 {
     public static class Extensions
     {
