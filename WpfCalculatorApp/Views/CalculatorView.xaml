@@ -104,7 +104,7 @@
             Grid.Row="1"
             Margin="5"
             Columns="4">
-            <Button cal:Message.Attach="[Action DoClear()]" Style="{StaticResource RoundCorner}">C</Button>
+            <Button cal:Message.Attach="[Action DoPressClear()]" Style="{StaticResource RoundCorner}">C</Button>
             <Button cal:Message.Attach="[Action DoPressCosinus()]" Style="{StaticResource RoundCorner}">Cos</Button>
             <Button cal:Message.Attach="[Action DoPressSinus()]" Style="{StaticResource RoundCorner}">Sin</Button>
             <Button cal:Message.Attach="[Action DoPressPercentageSign()]" Style="{StaticResource RoundCorner}">%</Button>

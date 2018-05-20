@@ -3,6 +3,7 @@ using System.Globalization;
 using System.Threading;
 using System.Windows;
 using WpfCalculatorApp.Bootstrapping;
+using WpfCalculatorApp.Extensions;
 
 namespace WpfCalculatorApp
 {

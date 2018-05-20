@@ -7,6 +7,7 @@ using Autofac;
 using Autofac.Core;
 using Caliburn.Micro;
 using WpfCalculatorApp.Bootstrapping.Modules;
+using WpfCalculatorApp.Extensions;
 using WpfCalculatorApp.ViewModels;
 
 namespace WpfCalculatorApp.Bootstrapping

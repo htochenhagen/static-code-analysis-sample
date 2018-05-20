@@ -1,47 +1,40 @@
-﻿using System;
-using System.ComponentModel;
-using System.Globalization;
-using System.Threading;
-using System.Windows;
+﻿using System.Threading;
 using Caliburn.Micro;
+using WpfCalculatorApp.Enums;
+using WpfCalculatorApp.Exceptions;
+using WpfCalculatorApp.Interfaces;
 
 namespace WpfCalculatorApp.ViewModels
 {
     public class CalculatorViewModel : Screen, ICalculatorViewModel
     {
 
+        #region Members
+
         private bool _resetInput;
         private string _currentDisplayValue;
-        private double? _lastDisplayValue;
 
-        public enum CalculatorOperator
-        {
-            Empty,
-            Addition,
-            Substraction,
-            Multiplication,
-            Division,
-            Cosine,
-            Sine
-        }
-        public enum OperationType
-        {
-            Empty,
-            Unary,
-            Binary
-        }
+        #endregion
 
-        public CalculatorViewModel()
+        #region Class
+
+        public CalculatorViewModel(ICalculator calculator, ICalculatorHelper calculatorHelper)
         {
+            Calculator = calculator;
+            CalculatorHelper = calculatorHelper;
+
             Reset();
+
+            calculatorHelper.SetupCalculator(calculator);
         }
 
-        public CalculatorOperator Operator { get; set; }
-        public OperationType Type { get; set; }
+        #endregion
+
+        #region Properties
 
         public string CurrentDisplayValue
         {
-            get { return _currentDisplayValue; }
+            get => _currentDisplayValue;
             set
             {
                 _currentDisplayValue = value;
@@ -49,443 +42,166 @@ namespace WpfCalculatorApp.ViewModels
             }
         }
 
-        public double? LastDisplayValue
-        {
-            get { return _lastDisplayValue; }
-            set
-            {
-                _lastDisplayValue = value;
-                NotifyOfPropertyChange();
-            }
-        }
+        public ICalculator Calculator { get; }
+        public ICalculatorHelper CalculatorHelper { get; }
+
+        #endregion
+
+        #region Methods
+
+        #region "DoPress" Methods
 
         public void DoPressNumber(string numberAsString)
         {
-            try
+            CalculatorHelper.HandleCalculatorErrors((() =>
             {
-                HandleNumberInput(numberAsString);
-            }
-            catch (CalculatorException e)
-            {
-                MessageBox.Show(e.Message, "Warnung", MessageBoxButton.OK, MessageBoxImage.Warning);
-            }
-            catch (Exception e)
-            {
-                MessageBox.Show(e.GetErrorMessage(), "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
+                if (_resetInput)
+                {
+                    CurrentDisplayValue = "0";
+                    _resetInput = false;
+                }
+
+                CurrentDisplayValue = CalculatorHelper.RemoveNumberGroupSeparator(CurrentDisplayValue) + numberAsString;
+
+                if (double.TryParse(CurrentDisplayValue, out var number))
+                {
+                    CurrentDisplayValue = number.ToString($"N{CalculatorHelper.GetNumberOfDecimalPlaces(CurrentDisplayValue)}");
+                }
+            }));
         }
 
         public void DoPressDecimalSeparator()
         {
-            HandleDecimalSeparatorInput();
-        }
-
-        public void DoPressPlusSign()
-        {
-            try
-            {
-                HandleAddition();
-            }
-            catch (CalculatorException e)
-            {
-                MessageBox.Show(e.Message, "Warnung", MessageBoxButton.OK, MessageBoxImage.Warning);
-            }
-            catch (Exception e)
-            {
-                MessageBox.Show(e.GetErrorMessage(), "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
-        }
-
-        public void DoPressMinusSign()
-        {
-            try
-            {
-                HandleSubstraction();
-            }
-            catch (CalculatorException e)
-            {
-                MessageBox.Show(e.Message, "Warnung", MessageBoxButton.OK, MessageBoxImage.Warning);
-            }
-            catch (Exception e)
-            {
-                MessageBox.Show(e.GetErrorMessage(), "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
-        }
-
-        public void DoPressPlusAndMinusSign()
-        {
-            try
-            {
-                HandleNegation();
-            }
-            catch (CalculatorException e)
-            {
-                MessageBox.Show(e.Message, "Warnung", MessageBoxButton.OK, MessageBoxImage.Warning);
-            }
-            catch (Exception e)
-            {
-                MessageBox.Show(e.GetErrorMessage(), "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
-        }
-
-        public void DoPressXLetter()
-        {
-            try
-            {
-                HandleMultiplication();
-            }
-            catch (CalculatorException e)
-            {
-                MessageBox.Show(e.Message, "Warnung", MessageBoxButton.OK, MessageBoxImage.Warning);
-            }
-            catch (Exception e)
-            {
-                MessageBox.Show(e.GetErrorMessage(), "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
-        }
-
-        public void DoPressPercentageSign()
-        {
-            try
-            {
-                HandleDivision();
-            }
-            catch (CalculatorException e)
-            {
-                MessageBox.Show(e.Message, "Warnung", MessageBoxButton.OK, MessageBoxImage.Warning);
-            }
-            catch (Exception e)
-            {
-                MessageBox.Show(e.GetErrorMessage(), "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
-        }
-
-        public void DoPressEqualSign()
-        {
-            try
-            {
-                CurrentDisplayValue = HandleCalculation();
-            }
-            catch (CalculatorException e)
-            {
-                MessageBox.Show(e.Message, "Warnung", MessageBoxButton.OK, MessageBoxImage.Warning);
-            }
-            catch (Exception e)
-            {
-                MessageBox.Show(e.GetErrorMessage(), "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
-        }
-
-        public void DoPressCosinus()
-        {
-            try
-            {
-                HandleCosine();
-            }
-            catch (CalculatorException e)
-            {
-                MessageBox.Show(e.Message, "Warnung", MessageBoxButton.OK, MessageBoxImage.Warning);
-            }
-            catch (Exception e)
-            {
-                MessageBox.Show(e.GetErrorMessage(), "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
-        }
-
-        public void DoPressSinus()
-        {
-            try
-            {
-                HandleSine();
-            }
-            catch (CalculatorException e)
-            {
-                MessageBox.Show(e.Message, "Warnung", MessageBoxButton.OK, MessageBoxImage.Warning);
-            }
-            catch (Exception e)
-            {
-                MessageBox.Show(e.GetErrorMessage(), "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
-        }
-
-        private double CalculateUnaryOperation(CalculatorOperator calculatorOperator, double operand)
-        {
-           return Calculate(calculatorOperator, OperationType.Unary, operand);
-        }
-
-        private double CalculateBinaryOperation(CalculatorOperator calculatorOperator, double firstOperand, double secondOperand)
-        {
-            return Calculate(calculatorOperator, OperationType.Binary, firstOperand, secondOperand);
-        }
-
-        private double Calculate(CalculatorOperator calculatorOperator, OperationType type, double firstOperand, double? secondOperand = null)
-        {
-            var result = 0.0;
-
-            if (!Enum.IsDefined(typeof(OperationType), type))
-                throw new InvalidEnumArgumentException(nameof(type), (int)type, typeof(OperationType));
-
-            if (type == OperationType.Binary && !secondOperand.HasValue)
-            {
-                throw new CalculatorException("Second operand is needed!");
-            }
-
-            switch (calculatorOperator)
-            {
-                case CalculatorOperator.Empty:
-                    throw new CalculatorException("No operation was chosen!");
-                case CalculatorOperator.Addition:
-                    if (secondOperand != null) result = firstOperand + secondOperand.Value;
-                    break;
-                case CalculatorOperator.Substraction:
-                    if (secondOperand != null) result = firstOperand - secondOperand.Value;
-                    break;
-                case CalculatorOperator.Multiplication:
-                    if (secondOperand != null) result = firstOperand * secondOperand.Value;
-                    break;
-                case CalculatorOperator.Division:
-                    if (secondOperand.Equals(0.0))
-                    {
-                        throw new CalculatorException("Division by 0 not possible!");
-                    }
-                    if (secondOperand != null) result = firstOperand / secondOperand.Value;
-                    break;
-                case CalculatorOperator.Cosine:
-                    result = Math.Cos(firstOperand);
-                    break;
-                case CalculatorOperator.Sine:
-                    result = Math.Sin(firstOperand);
-                    break;
-                default:
-                    throw new ArgumentOutOfRangeException(nameof(calculatorOperator), calculatorOperator, null);
-            }
-
-            return result;
-        }
-
-        private string HandleCalculation()
-        {
-            if (Operator == CalculatorOperator.Empty)
-            {
-                throw new CalculatorException("No operation was chosen!");
-            }
-            if (Type == OperationType.Empty)
-            {
-                throw new CalculatorException("No operation type was chosen!");
-            }
-
-            if (!double.TryParse(CurrentDisplayValue, out var number))
-            {
-                throw new CalculatorException("Display value could't be parsed!");
-            }
-
-            var result = 0.0;
-            if (Type == OperationType.Unary)
-            {
-                result = CalculateUnaryOperation(Operator, number);
-            }
-            else if (Type == OperationType.Binary)
-            {
-                if (LastDisplayValue == null)
-                {
-                    throw new CalculatorException("First operand is needed!");
-                }
-
-                result = CalculateBinaryOperation(Operator, LastDisplayValue.Value, number);
-            }
-
-            var numberOfDecimalPlaces = 0;
-            var resultAsString = result.ToString(CultureInfo.CurrentCulture);
-            var decimalSeparatorPosition = GetDecimalSeparatorPositionOfString(resultAsString);
-            if (decimalSeparatorPosition > 0)
-            {
-                numberOfDecimalPlaces = resultAsString.Substring(decimalSeparatorPosition + 1).Length;
-            }
-
-            Reset();
-
-            return result.ToString($"N{numberOfDecimalPlaces}");
-        }
-
-        private void HandleNumberInput(string numberAsString)
-        {
-            if (_resetInput)
-            {
-                CurrentDisplayValue = "0";
-                _resetInput = false;
-            }
-
-            CurrentDisplayValue =
-                CurrentDisplayValue?.Replace(Thread.CurrentThread.CurrentCulture.NumberFormat.NumberGroupSeparator,
-                    string.Empty) + numberAsString;
-
-            var numberOfDecimalPlaces = 0;
-            var decimalSeparatorPosition = GetDecimalSeparatorPositionOfString(CurrentDisplayValue);
-            if (decimalSeparatorPosition > 0)
-            {
-                numberOfDecimalPlaces = CurrentDisplayValue.Substring(decimalSeparatorPosition + 1).Length;
-            }
-
-            if (double.TryParse(CurrentDisplayValue, out var number))
-            {
-                CurrentDisplayValue = number.ToString($"N{numberOfDecimalPlaces}");
-            }
-        }
-        private void HandleDecimalSeparatorInput()
-        {
-            if (GetDecimalSeparatorPositionOfString(CurrentDisplayValue) < 0)
+            if (CalculatorHelper.GetDecimalSeparatorPositionOfString(CurrentDisplayValue) < 0)
             {
                 CurrentDisplayValue += Thread.CurrentThread.CurrentCulture.NumberFormat.NumberDecimalSeparator;
             }
         }
 
-        private void HandleAddition()
+        public void DoPressPlusSign()
         {
-            if (Operator != CalculatorOperator.Empty)
+            CalculatorHelper.HandleCalculatorErrors((() =>
             {
-                throw new CalculatorException("Only one operation is allowed!");
-            }
+                Calculator.CalculationContext.FirstOperand = CalculatorHelper.ParseDisplayValue(CurrentDisplayValue);
+                Calculator.CalculationContext.Operator = CalculatorOperator.Addition;
 
-            if (double.TryParse(CurrentDisplayValue, out var number))
-            {
-                LastDisplayValue = number;
-            }
-            else
-            {
-                throw new CalculatorException("Display value could't be parsed!");
-            }
-
-            Operator = CalculatorOperator.Addition;
-            Type = OperationType.Binary;
-            _resetInput = true;
+                _resetInput = true;
+            }));
         }
 
-
-        private void HandleSubstraction()
+        public void DoPressMinusSign()
         {
-            if (Operator != CalculatorOperator.Empty)
+            CalculatorHelper.HandleCalculatorErrors((() =>
             {
-                throw new CalculatorException("Only one operation is allowed!");
-            }
+                Calculator.CalculationContext.FirstOperand = CalculatorHelper.ParseDisplayValue(CurrentDisplayValue);
+                Calculator.CalculationContext.Operator = CalculatorOperator.Substraction;
 
-            if (double.TryParse(CurrentDisplayValue, out var number))
-            {
-                LastDisplayValue = number;
-            }
-            else
-            {
-                throw new CalculatorException("Display value could't be parsed!");
-            }
-
-            Operator = CalculatorOperator.Substraction;
-            Type = OperationType.Binary;
-            _resetInput = true;
+                _resetInput = true;
+            }));
         }
 
-        private void HandleMultiplication()
+        public void DoPressPlusAndMinusSign()
         {
-            if (Operator != CalculatorOperator.Empty)
+            CalculatorHelper.HandleCalculatorErrors((() =>
             {
-                throw new CalculatorException("Only one operation is allowed!");
-            }
+                if (CurrentDisplayValue == null)
+                {
+                    throw new CalculatorException("No value was entered!");
+                }
 
-            if (double.TryParse(CurrentDisplayValue, out var number))
-            {
-                LastDisplayValue = number;
-            }
-            else
-            {
-                throw new CalculatorException("Display value could't be parsed!");
-            }
-
-
-            Operator = CalculatorOperator.Multiplication;
-            Type = OperationType.Binary;
-            _resetInput = true;
+                CurrentDisplayValue = CurrentDisplayValue.StartsWith("-")
+                    ? CurrentDisplayValue.Substring(1)
+                    : "-" + CurrentDisplayValue;
+            }));
         }
 
-        private void HandleDivision()
+        public void DoPressXLetter()
         {
-            if (Operator != CalculatorOperator.Empty)
+            CalculatorHelper.HandleCalculatorErrors((() =>
             {
-                throw new CalculatorException("Only one operation is allowed!");
-            }
+                Calculator.CalculationContext.FirstOperand = CalculatorHelper.ParseDisplayValue(CurrentDisplayValue);
+                Calculator.CalculationContext.Operator = CalculatorOperator.Multiplication;
 
-            if (double.TryParse(CurrentDisplayValue, out var number))
-            {
-                LastDisplayValue = number;
-            }
-            else
-            {
-                throw new CalculatorException("Display value couldn't be parsed!");
-            }
-
-            Operator = CalculatorOperator.Division;
-            Type = OperationType.Binary;
-            _resetInput = true;
+                _resetInput = true;
+            }));
         }
 
-        private void HandleNegation()
+        public void DoPressPercentageSign()
         {
-            if (CurrentDisplayValue == null)
+            CalculatorHelper.HandleCalculatorErrors((() =>
             {
-                throw new CalculatorException("No value was entered!");
-            }
+                Calculator.CalculationContext.FirstOperand = CalculatorHelper.ParseDisplayValue(CurrentDisplayValue);
+                Calculator.CalculationContext.Operator = CalculatorOperator.Division;
 
-            CurrentDisplayValue = CurrentDisplayValue.StartsWith("-")
-                ? CurrentDisplayValue.Substring(1)
-                : "-" + CurrentDisplayValue;
+                _resetInput = true;
+            }));
         }
 
-        private void HandleCosine()
+        public void DoPressEqualSign()
         {
-            if (Operator != CalculatorOperator.Empty)
+            Calculate();
+        }
+
+        public void DoPressCosinus()
+        {
+            CalculatorHelper.HandleCalculatorErrors((() =>
             {
-                throw new CalculatorException("Only one operation is allowed!");
-            }
+                Calculator.CalculationContext.FirstOperand = CalculatorHelper.ParseDisplayValue(CurrentDisplayValue);
+                Calculator.CalculationContext.Operator = CalculatorOperator.Cosine;
 
-            Operator = CalculatorOperator.Cosine;
-            Type = OperationType.Unary;
-
-            CurrentDisplayValue = HandleCalculation();
-            _resetInput = true;
+                Calculate();
+                _resetInput = true;
+            }));
         }
 
-        private void HandleSine()
+        public void DoPressSinus()
         {
-            if (Operator != CalculatorOperator.Empty)
+            CalculatorHelper.HandleCalculatorErrors((() =>
             {
-                throw new CalculatorException("Only one operation is allowed!");
-            }
+                Calculator.CalculationContext.FirstOperand = CalculatorHelper.ParseDisplayValue(CurrentDisplayValue);
+                Calculator.CalculationContext.Operator = CalculatorOperator.Sine;
 
-            Operator = CalculatorOperator.Sine;
-            Type = OperationType.Unary;
-
-            CurrentDisplayValue = HandleCalculation();
-            _resetInput = true;
+                Calculate();
+                _resetInput = true;
+            }));
         }
 
-
-        private static int GetDecimalSeparatorPositionOfString(string value)
-        {
-            var decimalSeparatorPosition = value.LastIndexOf(",", StringComparison.Ordinal);
-            return decimalSeparatorPosition;
-        }
-
-
-        public void DoClear()
+        public void DoPressClear()
         {
             Reset();
+        } 
+
+        #endregion
+
+        private void Calculate()
+        {
+            CalculatorHelper.HandleCalculatorErrors((() =>
+            {
+                if (Calculator.IsBinaryOperation)
+                {
+                    Calculator.CalculationContext.SecondOperand = CalculatorHelper.ParseDisplayValue(CurrentDisplayValue);
+                }
+                else if (Calculator.IsUnaryOperation)
+                {
+                    Calculator.CalculationContext.FirstOperand = CalculatorHelper.ParseDisplayValue(CurrentDisplayValue);
+                }
+
+                var result = Calculator.Calculate();
+
+                Reset();
+
+                CurrentDisplayValue = CalculatorHelper.FormatDisplayValue(result);
+            }));
         }
 
         private void Reset()
         {
             CurrentDisplayValue = "0";
-            LastDisplayValue = null;
-            Operator = CalculatorOperator.Empty;
-            Type = OperationType.Empty;
+            Calculator.Reset();
             _resetInput = true;
-        }
+        } 
+
+        #endregion
 
     }
 }
