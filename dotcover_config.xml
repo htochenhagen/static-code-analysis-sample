@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AnalyzeParams>
+  <TargetExecutable>C:\Dev\git\static-code-analysis-sample\packages\NUnit.ConsoleRunner.3.8.0\tools\nunit3-console.exe</TargetExecutable>
+  <TargetArguments>C:\Dev\git\static-code-analysis-sample\WpfCalculatorApp\bin\Debug\WpfCalculatorApp.exe</TargetArguments>
+  <TargetWorkingDir>C:\Dev\git\static-code-analysis-sample</TargetWorkingDir>
+  <TempDir>C:\Temp</TempDir>
+  <Output>dotcover_report.xml</Output>
+  <ReportType>NDependXML</ReportType>
+  <InheritConsole>True</InheritConsole>
+  <AnalyzeTargetArguments>True</AnalyzeTargetArguments>
+
+    <!-- <ScopeEntry>ProjectFolder/**/*.dll</ScopeEntry> -->
+    <!-- <ScopeEntry>ProjectFolder/**/*.exe</ScopeEntry> -->
+
+  <!-- Allows including not loaded assemblies in the specified scope into coverage results. Ant-style patterns are supported here. -->
+  <!-- <Scope>
+    <ScopeEntry>ProjectFolder/**/*.dll</ScopeEntry>
+    <ScopeEntry>ProjectFolder/**/*.exe</ScopeEntry>
+  </Scope> -->
+ 
+  <!-- Coverage filters. It's possible to use asterisks as wildcard symbols. -->
+  <Filters>
+    <IncludeFilters>
+      <FilterEntry>
+        <ModuleMask>WpfCalculatorApp*</ModuleMask>
+        <!-- <ClassMask>Class mask</ClassMask> -->
+        <!-- <FunctionMask> Function mask </FunctionMask> -->
+      </FilterEntry>
+    </IncludeFilters>
+    <ExcludeFilters>
+      <FilterEntry>
+        <ClassMask>*_Should*</ClassMask>
+      </FilterEntry>
+    </ExcludeFilters>
+  </Filters>
+ 
+  <!-- Attribute filters. It's possible to use asterisks as wildcard symbols.
+  <AttributeFilters>
+    <AttributeFilterEntry> Attribute class mask </AttributeFilterEntry>
+    <AttributeFilterEntry>System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute</AttributeFilterEntry>
+  </AttributeFilters>
+  -->
+  <!-- Process Filters. It's possible to use asterisks as wildcard symbols.
+  <ProcessFilters>
+    <IncludeFilters>
+      <ProcessMask>SampleProcess*</ProcessMask>
+    </IncludeFilters>
+    <ExcludeFilters>
+	    <ProcessMask>SampleProcess.exe</ProcessMask>
+	  </ExcludeFilters>
+  </ProcessFilters>
+  -->
+</AnalyzeParams>
