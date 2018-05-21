@@ -132,6 +132,7 @@
     <Compile Include="Core\Operations\AdditionOperation_Should.cs" />
     <Compile Include="Exceptions\CalculatorContextException.cs" />
     <Compile Include="Helpers\CalculatorHelper.cs" />
+    <Compile Include="Helpers\CalculatorHelper_Should.cs" />
     <Compile Include="Interfaces\ICalculatorHelper.cs" />
     <Compile Include="Interfaces\ICalculationContext.cs" />
     <Compile Include="Interfaces\ICalculator.cs" />
