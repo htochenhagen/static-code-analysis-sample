@@ -60,6 +60,166 @@ namespace WpfCalculatorApp.ViewModels
 
         [Apartment(ApartmentState.STA)]
         [STAThread]
+        [Test]
+        [TestCase("3", "2", "1")]
+        [TestCase("-3", "2,34", "-5,34")]
+        [TestCase("2.100", "-300", "2.400")]
+        public void Do_Press_Minus_Sign(string firstOperand, string secondOperand, string result)
+        {
+            var sut = new CalculatorViewModel(_calculator, _calculatorHelper);
+
+            sut.CurrentDisplayValue = firstOperand;
+
+            sut.DoPressMinusSign();
+
+            sut.CurrentDisplayValue = secondOperand;
+
+            sut.DoPressEqualSign();
+
+            sut.CurrentDisplayValue.Should().Be(result);
+        }
+
+        [Apartment(ApartmentState.STA)]
+        [STAThread]
+        [Test]
+        [TestCase("3", "2", "6")]
+        [TestCase("-3", "3", "-9")]
+        [TestCase("2.100", "-300", "-630.000")]
+        public void Do_Press_X_Letter(string firstOperand, string secondOperand, string result)
+        {
+            var sut = new CalculatorViewModel(_calculator, _calculatorHelper);
+
+            sut.CurrentDisplayValue = firstOperand;
+
+            sut.DoPressXLetter();
+
+            sut.CurrentDisplayValue = secondOperand;
+
+            sut.DoPressEqualSign();
+
+            sut.CurrentDisplayValue.Should().Be(result);
+        }
+
+        [Apartment(ApartmentState.STA)]
+        [STAThread]
+        [Test]
+        [TestCase("3", "3", "1")]
+        [TestCase("-3", "3", "-1")]
+        [TestCase("2.100", "-300", "-7")]
+        public void Do_Press_Percentage_Sign(string firstOperand, string secondOperand, string result)
+        {
+            var sut = new CalculatorViewModel(_calculator, _calculatorHelper);
+
+            sut.CurrentDisplayValue = firstOperand;
+
+            sut.DoPressPercentageSign();
+
+            sut.CurrentDisplayValue = secondOperand;
+
+            sut.DoPressEqualSign();
+
+            sut.CurrentDisplayValue.Should().Be(result);
+        }
+
+        [Apartment(ApartmentState.STA)]
+        [STAThread]
+        [Test]
+        [TestCase("0", "1")]
+        public void Do_Press_Cosinus(string firstOperand, string result)
+        {
+            var sut = new CalculatorViewModel(_calculator, _calculatorHelper);
+
+            sut.CurrentDisplayValue = firstOperand;
+
+            sut.DoPressCosinus();
+
+            sut.CurrentDisplayValue.Should().Be(result);
+        }
+
+        [Apartment(ApartmentState.STA)]
+        [STAThread]
+        [Test]
+        [TestCase("0", "0")]
+        public void Do_Press_Sinus(string firstOperand, string result)
+        {
+            var sut = new CalculatorViewModel(_calculator, _calculatorHelper);
+
+            sut.CurrentDisplayValue = firstOperand;
+
+            sut.DoPressSinus();
+
+            sut.CurrentDisplayValue.Should().Be(result);
+        }
+
+        [Apartment(ApartmentState.STA)]
+        [STAThread]
+        [Test]
+        [TestCase("3", "3", "1")]
+        [TestCase("-3", "3", "-1")]
+        [TestCase("2.100", "-300", "-7")]
+        public void Do_Press_Equal_Sign(string firstOperand, string secondOperand, string result)
+        {
+            var sut = new CalculatorViewModel(_calculator, _calculatorHelper);
+
+            sut.CurrentDisplayValue = firstOperand;
+
+            sut.DoPressPercentageSign();
+
+            sut.CurrentDisplayValue = secondOperand;
+
+            sut.DoPressEqualSign();
+
+            sut.CurrentDisplayValue.Should().Be(result);
+        }
+
+        [Apartment(ApartmentState.STA)]
+        [STAThread]
+        [Test]
+        [TestCase("3", "3", "33")]
+        [TestCase("4", "3", "43")]
+        [TestCase("0", "3", "3")]
+        public void Do_Press_Number(string firstValue, string secondValue, string result)
+        {
+            var sut = new CalculatorViewModel(_calculator, _calculatorHelper);
+
+            sut.DoPressNumber(firstValue);
+            sut.DoPressNumber(secondValue);
+            sut.CurrentDisplayValue.Should().Be(result);
+        }
+
+        [Apartment(ApartmentState.STA)]
+        [STAThread]
+        [Test]
+        [TestCase("3", "3", "3,3")]
+        [TestCase("4", "3", "4,3")]
+        [TestCase("0", "3", "0,3")]
+        public void Do_Press_Decimal_Separator(string firstValue, string secondValue, string result)
+        {
+            var sut = new CalculatorViewModel(_calculator, _calculatorHelper);
+
+            sut.DoPressNumber(firstValue);
+            sut.DoPressDecimalSeparator();
+            sut.DoPressNumber(secondValue);
+            sut.CurrentDisplayValue.Should().Be(result);
+        }
+
+        [Apartment(ApartmentState.STA)]
+        [STAThread]
+        [Test]
+        [TestCase("3", "-3")]
+        [TestCase("-4", "4")]
+        [TestCase("0", "-0")]
+        public void Do_Press_Plus_And_Minus_Sign(string value, string result)
+        {
+            var sut = new CalculatorViewModel(_calculator, _calculatorHelper);
+
+            sut.CurrentDisplayValue = value;
+            sut.DoPressPlusAndMinusSign();
+            sut.CurrentDisplayValue.Should().Be(result);
+        }
+
+        [Apartment(ApartmentState.STA)]
+        [STAThread]
         [TestCase("3")]
         [TestCase("-3")]
         [TestCase("2.100")]

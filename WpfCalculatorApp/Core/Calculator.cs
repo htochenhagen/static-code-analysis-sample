@@ -71,7 +71,9 @@ namespace WpfCalculatorApp.Core
             var operation = GetOperation();
             if (operation is IBinaryOperation binaryOperation)
             {
-                result = binaryOperation.Calculate(CalculationContext.FirstOperand, CalculationContext.SecondOperand.Value);
+                if (CalculationContext.SecondOperand != null)
+                    result = binaryOperation.Calculate(CalculationContext.FirstOperand,
+                        CalculationContext.SecondOperand.Value);
             }
             else if(operation is IUnaryOperation unaryOperation)
             {
@@ -94,7 +96,7 @@ namespace WpfCalculatorApp.Core
             if (operation == null) throw new CalculatorException("No appropriate operation was found!");
 
             if (operation.Operator == CalculatorOperator.Empty) throw new CalculatorException("No operation was chosen!");
-            if (operation is IBinaryOperation binaryOperation && CalculationContext.SecondOperand == null)
+            if (operation is IBinaryOperation && CalculationContext.SecondOperand == null)
                 throw new CalculatorException(
                     "Invalid calculator context!\r\n\r\nSecond operand must not be <null> if operation type was set to binary!");
         }
