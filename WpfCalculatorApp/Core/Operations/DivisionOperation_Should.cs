@@ -1,7 +1,11 @@
-﻿using FluentAssertions;
+﻿using System;
+using FluentAssertions;
 using NEdifis;
 using NEdifis.Attributes;
+using NSubstitute;
+using NSubstitute.ExceptionExtensions;
 using NUnit.Framework;
+using WpfCalculatorApp.Exceptions;
 
 namespace WpfCalculatorApp.Core.Operations
 {
@@ -34,6 +38,17 @@ namespace WpfCalculatorApp.Core.Operations
 
             sut.Calculate(firstOperand, secondOperand).Should().Be(expectedResult);
         }
+
+        [Test]
+        public void Do_Division_By_Zero()
+        {
+            var ctx = new ContextFor<DivisionOperation>();
+            var sut = ctx.BuildSut();
+
+            Action act = () => sut.Calculate(222, 0);
+            act.Should().Throw<CalculatorException>();
+        }
+
 
     }
 }

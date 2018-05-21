@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Root CoveredStatements="317" TotalStatements="583" CoveragePercent="54" ReportType="NDependXML" DotCoverVersion="2018.1">
-  <Assembly Name="WpfCalculatorApp" CoveredStatements="317" TotalStatements="583" CoveragePercent="54">
+<Root CoveredStatements="322" TotalStatements="583" CoveragePercent="55" ReportType="NDependXML" DotCoverVersion="2018.1">
+  <Assembly Name="WpfCalculatorApp" CoveredStatements="322" TotalStatements="583" CoveragePercent="55">
     <Namespace Name="WpfCalculatorApp" CoveredStatements="0" TotalStatements="61" CoveragePercent="0">
       <Type Name="App" CoveredStatements="0" TotalStatements="26" CoveragePercent="0">
         <Type Name="&lt;&gt;c" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
@@ -69,7 +69,7 @@
         <Method Name="set_SecondOperand(Nullable&lt;Double&gt;)" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" FirstStatementLine="30" />
       </Type>
     </Namespace>
-    <Namespace Name="WpfCalculatorApp.Core.Operations" CoveredStatements="49" TotalStatements="51" CoveragePercent="96">
+    <Namespace Name="WpfCalculatorApp.Core.Operations" CoveredStatements="51" TotalStatements="51" CoveragePercent="100">
       <Type Name="AdditionOperation" CoveredStatements="8" TotalStatements="8" CoveragePercent="100">
         <Method Name=".ctor()" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" FirstStatementLine="9" />
         <Method Name="Calculate(Double,Double)" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" FirstStatementLine="17" />
@@ -80,9 +80,9 @@
         <Method Name="Calculate(Double)" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" FirstStatementLine="17" />
         <Method Name="get_Operator()" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" FirstStatementLine="14" />
       </Type>
-      <Type Name="DivisionOperation" CoveredStatements="9" TotalStatements="11" CoveragePercent="82">
+      <Type Name="DivisionOperation" CoveredStatements="11" TotalStatements="11" CoveragePercent="100">
         <Method Name=".ctor()" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" FirstStatementLine="10" />
-        <Method Name="Calculate(Double,Double)" CoveredStatements="4" TotalStatements="6" CoveragePercent="67" FirstStatementLine="18" />
+        <Method Name="Calculate(Double,Double)" CoveredStatements="6" TotalStatements="6" CoveragePercent="100" FirstStatementLine="18" />
         <Method Name="get_Operator()" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" FirstStatementLine="15" />
       </Type>
       <Type Name="MultiplicationOperation" CoveredStatements="8" TotalStatements="8" CoveragePercent="100">
@@ -101,15 +101,15 @@
         <Method Name="get_Operator()" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" FirstStatementLine="14" />
       </Type>
     </Namespace>
-    <Namespace Name="WpfCalculatorApp.Exceptions" CoveredStatements="0" TotalStatements="18" CoveragePercent="0">
+    <Namespace Name="WpfCalculatorApp.Exceptions" CoveredStatements="3" TotalStatements="18" CoveragePercent="17">
       <Type Name="CalculatorContextException" CoveredStatements="0" TotalStatements="9" CoveragePercent="0">
         <Method Name=".ctor()" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" FirstStatementLine="7" />
         <Method Name=".ctor(String)" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" FirstStatementLine="12" />
         <Method Name=".ctor(String,Exception)" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" FirstStatementLine="17" />
       </Type>
-      <Type Name="CalculatorException" CoveredStatements="0" TotalStatements="9" CoveragePercent="0">
+      <Type Name="CalculatorException" CoveredStatements="3" TotalStatements="9" CoveragePercent="33">
         <Method Name=".ctor()" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" FirstStatementLine="7" />
-        <Method Name=".ctor(String)" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" FirstStatementLine="12" />
+        <Method Name=".ctor(String)" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" FirstStatementLine="12" />
         <Method Name=".ctor(String,Exception)" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" FirstStatementLine="17" />
       </Type>
     </Namespace>
