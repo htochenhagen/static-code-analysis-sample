@@ -127,6 +127,12 @@
     <Compile Include="Bootstrapping\Modules\ApplicationModule.cs" />
     <Compile Include="Core\Calculator.cs" />
     <Compile Include="Core\CalculatorContext.cs" />
+    <Compile Include="Core\Operations\SineOperation_Should.cs" />
+    <Compile Include="Core\Operations\CosineOperation_Should.cs" />
+    <Compile Include="Core\Operations\MultiplicationOperation_Should.cs" />
+    <Compile Include="Core\Operations\DivisionOperation_Should.cs" />
+    <Compile Include="Core\Operations\SubstractionOperation_Should.cs" />
+    <Compile Include="Core\Operations\AdditionOperation_Should.cs" />
     <Compile Include="Exceptions\CalculatorContextException.cs" />
     <Compile Include="Helpers\CalculatorHelper.cs" />
     <Compile Include="Interfaces\ICalculatorHelper.cs" />
