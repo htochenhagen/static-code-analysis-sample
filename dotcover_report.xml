@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Root CoveredStatements="211" TotalStatements="582" CoveragePercent="36" ReportType="NDependXML" DotCoverVersion="2018.1">
-  <Assembly Name="WpfCalculatorApp" CoveredStatements="211" TotalStatements="582" CoveragePercent="36">
+<Root CoveredStatements="227" TotalStatements="582" CoveragePercent="39" ReportType="NDependXML" DotCoverVersion="2018.1">
+  <Assembly Name="WpfCalculatorApp" CoveredStatements="227" TotalStatements="582" CoveragePercent="39">
     <Namespace Name="WpfCalculatorApp" CoveredStatements="0" TotalStatements="61" CoveragePercent="0">
       <Type Name="App" CoveredStatements="0" TotalStatements="26" CoveragePercent="0">
         <Type Name="&lt;&gt;c" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
@@ -69,35 +69,35 @@
         <Method Name="set_SecondOperand(Nullable&lt;Double&gt;)" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" FirstStatementLine="30" />
       </Type>
     </Namespace>
-    <Namespace Name="WpfCalculatorApp.Core.Operations" CoveredStatements="30" TotalStatements="51" CoveragePercent="59">
+    <Namespace Name="WpfCalculatorApp.Core.Operations" CoveredStatements="46" TotalStatements="51" CoveragePercent="90">
       <Type Name="AdditionOperation" CoveredStatements="8" TotalStatements="8" CoveragePercent="100">
         <Method Name=".ctor()" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" FirstStatementLine="9" />
         <Method Name="Calculate(Double,Double)" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" FirstStatementLine="17" />
         <Method Name="get_Operator()" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" FirstStatementLine="14" />
       </Type>
-      <Type Name="CosineOperation" CoveredStatements="5" TotalStatements="8" CoveragePercent="63">
+      <Type Name="CosineOperation" CoveredStatements="8" TotalStatements="8" CoveragePercent="100">
         <Method Name=".ctor()" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" FirstStatementLine="9" />
-        <Method Name="Calculate(Double)" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" FirstStatementLine="17" />
+        <Method Name="Calculate(Double)" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" FirstStatementLine="17" />
         <Method Name="get_Operator()" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" FirstStatementLine="14" />
       </Type>
-      <Type Name="DivisionOperation" CoveredStatements="4" TotalStatements="11" CoveragePercent="36">
+      <Type Name="DivisionOperation" CoveredStatements="8" TotalStatements="11" CoveragePercent="73">
         <Method Name=".ctor()" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" FirstStatementLine="10" />
-        <Method Name="Calculate(Double,Double)" CoveredStatements="0" TotalStatements="6" CoveragePercent="0" FirstStatementLine="18" />
+        <Method Name="Calculate(Double,Double)" CoveredStatements="4" TotalStatements="6" CoveragePercent="67" FirstStatementLine="18" />
         <Method Name="get_Operator()" CoveredStatements="0" TotalStatements="1" CoveragePercent="0" FirstStatementLine="15" />
       </Type>
-      <Type Name="MultiplicationOperation" CoveredStatements="4" TotalStatements="8" CoveragePercent="50">
+      <Type Name="MultiplicationOperation" CoveredStatements="7" TotalStatements="8" CoveragePercent="88">
         <Method Name=".ctor()" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" FirstStatementLine="9" />
-        <Method Name="Calculate(Double,Double)" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" FirstStatementLine="17" />
+        <Method Name="Calculate(Double,Double)" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" FirstStatementLine="17" />
         <Method Name="get_Operator()" CoveredStatements="0" TotalStatements="1" CoveragePercent="0" FirstStatementLine="14" />
       </Type>
-      <Type Name="SineOperation" CoveredStatements="5" TotalStatements="8" CoveragePercent="63">
+      <Type Name="SineOperation" CoveredStatements="8" TotalStatements="8" CoveragePercent="100">
         <Method Name=".ctor()" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" FirstStatementLine="9" />
-        <Method Name="Calculate(Double)" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" FirstStatementLine="17" />
+        <Method Name="Calculate(Double)" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" FirstStatementLine="17" />
         <Method Name="get_Operator()" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" FirstStatementLine="14" />
       </Type>
-      <Type Name="SubstractionOperation" CoveredStatements="4" TotalStatements="8" CoveragePercent="50">
+      <Type Name="SubstractionOperation" CoveredStatements="7" TotalStatements="8" CoveragePercent="88">
         <Method Name=".ctor()" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" FirstStatementLine="9" />
-        <Method Name="Calculate(Double,Double)" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" FirstStatementLine="17" />
+        <Method Name="Calculate(Double,Double)" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" FirstStatementLine="17" />
         <Method Name="get_Operator()" CoveredStatements="0" TotalStatements="1" CoveragePercent="0" FirstStatementLine="14" />
       </Type>
     </Namespace>

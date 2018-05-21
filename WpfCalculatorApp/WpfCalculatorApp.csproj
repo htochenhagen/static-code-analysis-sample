@@ -214,4 +214,8 @@
   </Target>
   <Import Project="..\packages\OneClickBuild.1.11.5\build\OneClickBuild.targets" Condition="Exists('..\packages\OneClickBuild.1.11.5\build\OneClickBuild.targets')" />
   <Import Project="..\packages\GitVersionTask.3.6.5\build\dotnet\GitVersionTask.targets" Condition="Exists('..\packages\GitVersionTask.3.6.5\build\dotnet\GitVersionTask.targets')" />
+  <PropertyGroup>
+    <PostBuildEvent>IF EXIST $(SolutionDir)dotcover_report.xml DEL /F $(SolutionDir)dotcover_report.xml
+CALL $(SolutionDir)DotCoverCmdLineTools\dotCover.exe analyse $(SolutionDir)dotcover_config.xml</PostBuildEvent>
+  </PropertyGroup>
 </Project>
