@@ -32,3 +32,14 @@ Statisches Software-Testverfahren zur Compile-Zeit. Dient dem Aufspüren von Feh
 * Durch Metriken zyklisch prüfbar und auswertbar
 * Qualität wird explizit eingefordert durch Richtlinien/Vorgaben
 * ...
+
+---
+
+### Abgrenzung zur <span style="color: #FE9D0E">dynamischen</span> Codeanalyse
+
+* Dynamischer Codeanalysen setzen ein laufendes Programm voraus
+* Kontrollierte Ausführung des SUT mit systematisch festgelegten Eingabedaten (Testfälle)
+* Beispiel Unit-Tests:
+ 1. Defintion der Eingabe- und zu erwarteten Ausgabedaten Pro Testfall (Arrange)
+ 2. Ausführung des SUT Methode (Act)
+ 3. Vergleich der vom Testlauf erzeugten Ausgabedaten mit den erwarteten Daten. Bei Abweichungen liegt ein Fehler vor (Assert)
