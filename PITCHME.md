@@ -81,3 +81,16 @@ Statisches Software-Testverfahren zur Compile-Zeit. Dient dem Aufspüren von Feh
   * CC > 30 = Extremely complex and should be split into smaller methods
  * Obere Schranke für minimale Anzahl der Testfälle bei vollständiger Testabdeckung
 * Coverage: Check der Testüberdeckung
+
+---
+
+### <span style="color: #FE9D0E">NDepend</span>
+* NDepend kümmert sich um die statische Codeanalyse von .NET-Quelltext
+* Mit Hilfe von Metriken wird der Code geprüft
+* „Technical Debt Management“
+* Versionen:
+ * Standalone (Visual NDepend)
+ * Visual Studio Integration
+ * Integrationen für TeamCity, TFS und Co.
+
+![NDepend Logo](/images/full_logo.jpg)
