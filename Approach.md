@@ -40,9 +40,9 @@
 - CC (Zyklomatische Komplexität oder McCabe-Metrik)
     - Misst ganz allgemein die Komplexität eines Softwaremoduls
     - Grundlage ist die Anzahl der Verzweigungen in einem Codeabschnitt
+        - CC > 15 = Hard to understand and maintain
+        - CC > 30 = Extremely complex and should be split into smaller methods
     - Obere Schranke für minimale Anzahl der Testfälle bei vollständiger Testabdeckung
-    - CC > 15 = Hard to understand and maintain
-    - CC > 30 = Extremely complex and should be split into smaller methods
 - Coverage
     -  Nur weil ein System eine hohe Testüberdeckung hat, müssen die geschriebenen Tests nicht automatisch eine gute Qualität haben und die richtigen Testfälle testen
     -  Dem testenden Entwickler gibt die Metrik eine gute Aussage darüber, ob ein Testfall noch nicht berücksichtig und umgesetzt wurde.
@@ -52,6 +52,7 @@
 - Entwickler: Patrick Smacchia
 - Erscheinungsdatum: April 2004
 - Beschreibung: 
+    - Tool, das Qualität in .NET Softwareprodukten sicherstellen soll 
     - NDepend ist ein Tool, das Qualität in Softwareprodukten sicherstellen soll. Es erlaubt, bestimmte Regeln zu formulieren, welche die entwickelte Codebasis einhalten muss.
     - NDepend kümmert sich um die statische Codeanalyse von Quelltext und bietet verschiedene Metriken an, um den Zustand von Code zu prüfen, zum Beispiel im Sinne von Wartbarkeit.
     - Eine größere Neuerung ist das „Technical Debt Management“, das technische Schulden im Code aufspürt und die Kosten der Behebung (oder des Nicht-Behebens) berechnet.
@@ -104,11 +105,11 @@
 - Für Produktentwicklung klare Empfehlung meinseits! Aber auch aus Projekten enstandene Softwareprodukte sollten regelmäßig untersucht werden.
 - Wöchentliches oder alle 2 Wochen Team-Review der NDepend-Ergebnisse/Analysen/Auswertungen.
 - Evtl. Einbinden in den CI-Prozess. Verweigern des Builds, wenn bestimmte oder selbst definierte Quality Gates nicht eingehalten werden können.
-
-## Sonstiges
-- Alternative: Code Coverage
 - Kritikalitäten auf Komponenten-Ebene
     - Kritikalitätswerte zwischen eins und fünf bestimmen den Grad an zu leistender Code-Coverage (Kritikalität 1: 20 Prozent, Kritikalität 2: 40 Prozent, ..., Kritikalität 4: 80 Prozent ...)
+- Wem das zu alles viel ist kann bzw. sollte zumindest die Alternative "Code Coverage" anwenden
+
+## Sonstiges
 - Pros&Cons gegenüber SonarQube
 - SOLID, YAGNI, KISS, DRY etc.
 - Anstatt von Anfang an eine saubere Architektur mit mehreren Schichten zugrunde zu legen, wird oft ein großer Monolith entwickelt. Die anfangs schnelle Entwicklungsgeschwindigkeit sinkt zunehmend, die Zahl der Fehler steigt und ein neues Merkmal wird immer teurer.
@@ -119,11 +120,3 @@
 
 ## Todo
 - Unterschiedliche Stände einchecken, so dass im Vortrag keine Probleme beim wechseln entstehen
-
-
-# Vorgehensweise
-- Motivation, ggf. aus dotnetnpro?
-- Eigenes Beispiel in SSE-Infrastruktur, ggf. CI/CD-Integration?
-- einheitliche Vorgaben (Quality Gates)
-- Vorschlag zum Team-Review (z.B. 1x wöchentlich)
-- Weiteres?
