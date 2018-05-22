@@ -53,3 +53,5 @@ Statisches Software-Testverfahren zur Compile-Zeit. Dient dem Aufspüren von Feh
 *	Einheitliche Vorgaben (Rules, Quality Gates)
 *	Integration in den Build-Prozeß (Quality Gates Fails)
 *	Vermeiden von teuren Refaktorisierungen
+
+![Motivation](/images/Motivation.png)
