@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AnalyzeParams>
-  <TargetExecutable>C:\Dev\git\static-code-analysis-sample\packages\NUnit.ConsoleRunner.3.8.0\tools\nunit3-console.exe</TargetExecutable>
-  <TargetArguments>C:\Dev\git\static-code-analysis-sample\WpfCalculatorApp\bin\Debug\WpfCalculatorApp.exe</TargetArguments>
-  <TargetWorkingDir>C:\Dev\git\static-code-analysis-sample</TargetWorkingDir>
-  <TempDir>C:\Temp</TempDir>
+  <TargetExecutable>.\packages\NUnit.ConsoleRunner.3.8.0\tools\nunit3-console.exe</TargetExecutable>
+  <TargetArguments>.\\WpfCalculatorApp\bin\Debug\WpfCalculatorApp.exe</TargetArguments>
+  <TargetWorkingDir>.\</TargetWorkingDir>
+  <!-- <TempDir>%tempFolder%</TempDir> -->
   <Output>dotcover_report.xml</Output>
-  <ReportType>NDependXML</ReportType>
+  <ReportType>NDependXML</ReportType> 
   <InheritConsole>True</InheritConsole>
   <AnalyzeTargetArguments>True</AnalyzeTargetArguments>
 
