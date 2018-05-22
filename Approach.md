@@ -120,3 +120,12 @@
 
 ## Todo
 - Unterschiedliche Stände einchecken, so dass im Vortrag keine Probleme beim wechseln entstehen
+
+
+https://www.ndepend.com/docs/quality-gates
+
+A Quality Gate outputs a status (Pass, Warn, Fail).
+Typically a Quality Gate must be validated before releasing to production.
+A Rule outputs issues.
+An issue is a code smell that should be fixed to make the code cleaner and avoid potential problems.
+Typically the team can release to production even if some issues are still reported.
