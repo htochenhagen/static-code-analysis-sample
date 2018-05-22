@@ -46,7 +46,7 @@ Statisches Software-Testverfahren zur Compile-Zeit. Dient dem Aufspüren von Feh
 
 ---
 
-### Motivation
+### <span style="color: #FE9D0E">Motivation</span>
 
 *	Übersicht über den Gesundheitszustand des Systems
 * Hohe Softwarequalität (Skalierbar, Wiederholbar, Änderbar)
