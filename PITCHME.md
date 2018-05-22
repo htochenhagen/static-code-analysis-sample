@@ -35,7 +35,7 @@ Statisches Software-Testverfahren zur Compile-Zeit. Dient dem Aufspüren von Feh
 
 ---
 
-#### Abgrenzung <span style="color: #FE9D0E">dynamische</span> Analyse
+### Abgrenzung zur <span style="color: #FE9D0E">dynamischen</span> Codeanalyse
 
 * Laufendes Programm wird benötigt
 * Kontrollierte Ausführung von Testfällen
