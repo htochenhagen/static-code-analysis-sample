@@ -2,10 +2,12 @@
 
 - Entwickler: Patrick Smacchia
 - Erscheinungsdatum: April 2004
-- Tool, das Qualität in .NET Softwareprodukten sicherstellen soll 
 
 ![NDepend Logo](/images/full_logo.jpg)
 
 ---
 
-### Static code analysis
+### Statische Codeanalyse
+
+#### Erklärung
+Statisches Software-Testverfahren zur Compile-Zeit. Dient dem Aufspüren von Fehlern bzw. Schwachstellen. Hierzu wird der Quelltext wirdeiner Reihe formaler Prüfungen unterzogen.
