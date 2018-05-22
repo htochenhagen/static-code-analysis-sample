@@ -48,8 +48,8 @@ Statisches Software-Testverfahren zur Compile-Zeit. Dient dem Aufspüren von Feh
 
 ### <span style="color: #FE9D0E">Motivation</span>
 
-*	Übersicht über den Gesundheitszustand des Systems
+*	Übersicht Gesundheitszustand des Systems
 * Hohe Softwarequalität (Skalierbar, Wiederholbar, Änderbar)
 *	Einheitliche Vorgaben (Rules, Quality Gates)
-*	Evtl. Integration in den Build-Prozeß (Quality Gates Fails)
-*	Vermeiden von nachträglichen, teuren Refaktorisierungen
+*	Integration in den Build-Prozeß (Quality Gates Fails)
+*	Vermeiden von teuren Refaktorisierungen
