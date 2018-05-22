@@ -77,9 +77,9 @@ Statisches Software-Testverfahren zur Compile-Zeit. Dient dem Aufspüren von Feh
 * LOC: Check auf SRP/Separation of Concerns
 * CC (McCabe-Metrik): Misst ganz allgemein die Komplexität eines Softwaremoduls
  * Grundlage ist die Anzahl der Verzweigungen in einem Codeabschnitt
-   * <span style="font-size:18px">CC > 15 = Hard to understand and maintain</span>
-  * CC > 30 = Extremely complex and should be split into smaller methods
-  * Obere Schranke für minimale Anzahl der Testfälle bei vollständiger Testabdeckung
+   * <span style="font-size:28px">CC > 15 = Hard to understand and maintain</span>
+   * <span style="font-size:28px">CC > 30 = Extremely complex and should be split into smaller methods</span>
+ * Obere Schranke für minimale Anzahl der Testfälle bei vollständiger Testabdeckung
 * Coverage: Check der Testüberdeckung
 
 ---
