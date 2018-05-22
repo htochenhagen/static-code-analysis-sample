@@ -58,7 +58,7 @@ Statisches Software-Testverfahren zur Compile-Zeit. Dient dem Aufspüren von Feh
 
 ---
 
-### Code Metriken
+### Code <span style="color: #FE9D0E">Metriken</span>
 
 * Definition: Methode zur Bewertung der Qualität eines Codes
 * Klassifizierung: 
@@ -67,7 +67,7 @@ Statisches Software-Testverfahren zur Compile-Zeit. Dient dem Aufspüren von Feh
  
 ---
 
-### Code Metriken Beispiele
+### Code Metriken <span style="color: #FE9D0E">Beispiele</span>
  
 * LOC: Check auf SRP oder Separation of Concerns
 * CC (McCabe-Metrik): Misst ganz allgemein die Komplexität eines Softwaremoduls
