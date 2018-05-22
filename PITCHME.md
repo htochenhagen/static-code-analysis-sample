@@ -10,4 +10,4 @@
 ### Statische Codeanalyse
 
 #### Erklärung
-Statisches Software-Testverfahren zur Compile-Zeit. Dient dem Aufspüren von Fehlern bzw. Schwachstellen. Hierzu wird der Quelltext wirdeiner Reihe formaler Prüfungen unterzogen.
+Statisches Software-Testverfahren zur Compile-Zeit. Dient dem Aufspüren von Fehlern bzw. Schwachstellen. Hierzu wird der Quelltext einer Reihe formaler Prüfungen unterzogen.
