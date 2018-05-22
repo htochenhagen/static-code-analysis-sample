@@ -14,17 +14,14 @@ Statisches Software-Testverfahren zur Compile-Zeit. Dient dem Aufspüren von Feh
 
 ---
 
-## <span style="color: #FE9D0E">NDepend</span> Statischer Codeanalyse
+### Vorteile statischer Codeanalyse
 
-* Gezielte Codeanalyse ohne die Software ausführen zu müssen
+* Gezielte Codeanalyse ohne Ausführung der Software
 * Sicherstellung innerer Softwarequalität
-  * Ermittlung von Kennzahlen zu Architektur und Design
-  * Ermittlung von Duplikaten bzw. totem Code (Dead Code)
+  * Ermittlung von Kennzahlen zu Architektur, Design und Komplexität
+  * Ermittlung von Duplikaten, Dead Code, potenziellen Bugs
   * Einbeziehung der Code Coverage Ergebnisse
-  * Ermittlung der Komplexität (zyklomatisch ...)
-  * Ermittlung von potenziellen Bugs (Division durch 0 ...)
-  * Einhaltung von Entwicklungsrichtlinien
-  * Einhaltung von Code-Dokumentationen (Kommentare ...)
+  * Einhaltung von Entwicklungsrichtlinien sowie Code-Dokumentationen
 * Verbesserte Wissen über Qualitätsprobleme der Entwickler
 * Einheitliche Verständnis/Sichtweise auf bestimmte Qualitätsziele
 * Zyklisch prüfbar und auswertbar durch Metriken
