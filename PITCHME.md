@@ -22,6 +22,11 @@ Statisches Software-Testverfahren zur Compile-Zeit. Dient dem Aufspüren von Feh
   * Ermittlung von Duplikaten, Dead Code, potenziellen Bugs
   * Einbeziehung der Code Coverage Ergebnisse
   * Einhaltung von Entwicklungsrichtlinien sowie Code-Dokumentationen
+
+---
+
+### <span style="color: #FE9D0E">Pros</span> statischer Codeanalyse
+
 * Stärkt Wissen über Qualitätsprobleme der Entwickler
 * Einheitliches Verständnis von Qualitätszielen
 * Durch Metriken zyklisch prüfbar und auswertbar
