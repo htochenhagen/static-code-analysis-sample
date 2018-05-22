@@ -7,7 +7,7 @@
 
 ---
 
-### Statische Codeanalyse
+### <span style="color: #FE9D0E">Statische</span> Codeanalyse
 
 #### Erklärung
 Statisches Software-Testverfahren zur Compile-Zeit. Dient dem Aufspüren von Fehlern bzw. Schwachstellen. Hierzu wird der Quelltext einer Reihe formaler Prüfungen unterzogen.
