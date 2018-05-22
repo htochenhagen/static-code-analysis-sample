@@ -61,6 +61,7 @@ Statisches Software-Testverfahren zur Compile-Zeit. Dient dem Aufspüren von Feh
 ### Code <span style="color: #FE9D0E">Metriken</span>
 
 * Definition: Methode zur Bewertung der Qualität eines Codes
+* Indikatoren, keine definitiven Aussagen!
 * Klassifizierung: 
  * Applikation
  * Assemblies
@@ -73,9 +74,10 @@ Statisches Software-Testverfahren zur Compile-Zeit. Dient dem Aufspüren von Feh
 
 ### Code Metriken <span style="color: #FE9D0E">Beispiele</span>
  
-* LOC: Check auf SRP oder Separation of Concerns
+* LOC: Check auf SRP/Separation of Concerns
 * CC (McCabe-Metrik): Misst ganz allgemein die Komplexität eines Softwaremoduls
  * Grundlage ist die Anzahl der Verzweigungen in einem Codeabschnitt
   * CC > 15 = Hard to understand and maintain
   * CC > 30 = Extremely complex and should be split into smaller methods
-  * Obere Schranke für minimale Anzahl der Testfälle bei vollständiger Testabdeckung
+ * Obere Schranke für minimale Anzahl der Testfälle bei vollständiger Testabdeckung
+* Coverage: Check der Testüberdeckung
