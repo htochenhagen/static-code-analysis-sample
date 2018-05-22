@@ -55,3 +55,23 @@ Statisches Software-Testverfahren zur Compile-Zeit. Dient dem Aufspüren von Feh
 *	Vermeiden von teuren Refaktorisierungen
 
 ![Motivation](/images/Motivation.png)
+
+---
+
+### Code Metriken
+
+* Definition: Methode zur Bewertung der Qualität eines Codes
+* Klassifizierung: 
+ * Code-Metriken: Applikation, Assemblies, Namespaces, Types, Methods, Fields
+ * Technical Debt Metrik
+ 
+---
+
+### Code Metriken Beispiele
+ 
+* LOC: Check auf SRP oder Separation of Concerns
+* CC (McCabe-Metrik): Misst ganz allgemein die Komplexität eines Softwaremoduls
+ * Grundlage ist die Anzahl der Verzweigungen in einem Codeabschnitt
+  * CC > 15 = Hard to understand and maintain
+  * CC > 30 = Extremely complex and should be split into smaller methods
+  * Obere Schranke für minimale Anzahl der Testfälle bei vollständiger Testabdeckung
