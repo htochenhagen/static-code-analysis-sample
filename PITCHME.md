@@ -43,3 +43,13 @@ Statisches Software-Testverfahren zur Compile-Zeit. Dient dem Aufspüren von Feh
  1. Arrange: Defintion der Eingabe- und zu erwarteten Ausgabedaten
  2. Act: Ausführung des SUT Methode
  3. Assert: Vergleich der erzeugten mit den erwarteten Daten (Fehler bei Abweichungen)
+
+---
+
+### Motivation
+
+*	Übersicht über den Gesundheitszustand des Systems
+* Hohe Softwarequalität (Skalierbar, Wiederholbar, Änderbar)
+*	Einheitliche Vorgaben (Rules, Quality Gates)
+*	Evtl. Integration in den Build-Prozeß (Quality Gates Fails)
+*	Vermeiden von nachträglichen, teuren Refaktorisierungen
