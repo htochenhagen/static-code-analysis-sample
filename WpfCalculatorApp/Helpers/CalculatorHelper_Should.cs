@@ -1,4 +1,5 @@
 ﻿using FluentAssertions;
+using NDepend.Attributes;
 using NEdifis;
 using NEdifis.Attributes;
 using NUnit.Framework;
@@ -7,6 +8,7 @@ using WpfCalculatorApp.Core;
 namespace WpfCalculatorApp.Helpers
 {
     [TestFixtureFor(typeof(CalculatorHelper))]
+    [UncoverableByTest]
     // ReSharper disable once InconsistentNaming
     internal class CalculatorHelper_Should
     {

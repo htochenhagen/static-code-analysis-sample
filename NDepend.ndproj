@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <NDepend AppName="NDepend" Platform="DotNet" FileWrittenByProductVersion="2018.1.1.9040">
   <OutputDir KeepXmlFiles="False">C:\Dev\git\static-code-analysis-sample\NDependOut</OutputDir>
   <Assemblies>
@@ -92,7 +92,8 @@
       <High2Critical_SeverityThreshold>72000000000</High2Critical_SeverityThreshold>
       <Critical2Blocker_SeverityThreshold>360000000000</Critical2Blocker_SeverityThreshold>
     </DebtSettings>
-  </ProjectDebtSettings><Queries>
+  </ProjectDebtSettings>
+  <Queries>
     <Group Name="Quality Gates" Active="True" ShownInReport="True">
       <Query Active="True" DisplayList="True" DisplayStat="True" DisplaySelectionView="False" IsCriticalRule="False"><![CDATA[// <Name>Quality Gates Evolution</Name>
 from qg in QualityGates
@@ -11476,4 +11477,8 @@ select new {
 //</HowToFix>]]></Query>
       </Group>
     </Group>
-  </Queries></NDepend>
+  </Queries>
+  <WarnFilter>
+    <DontWarn>Assembly {NDepend.API} is referenced by {WpfCalculatorApp} but is not found.</DontWarn>
+  </WarnFilter>
+</NDepend>

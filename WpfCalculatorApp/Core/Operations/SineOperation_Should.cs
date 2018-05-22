@@ -1,4 +1,5 @@
 ﻿using FluentAssertions;
+using NDepend.Attributes;
 using NEdifis;
 using NEdifis.Attributes;
 using NUnit.Framework;
@@ -6,6 +7,7 @@ using NUnit.Framework;
 namespace WpfCalculatorApp.Core.Operations
 {
     [TestFixtureFor(typeof(SineOperation))]
+    [UncoverableByTest]
     // ReSharper disable once InconsistentNaming
     internal class SineOperation_Should
     {

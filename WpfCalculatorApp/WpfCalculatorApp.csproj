@@ -62,6 +62,10 @@
     <Reference Include="FluentAssertions.Autofac, Version=0.6.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\FluentAssertions.Autofac.0.6.0\lib\net45\FluentAssertions.Autofac.dll</HintPath>
     </Reference>
+    <Reference Include="NDepend.API, Version=2018.1.1.9040, Culture=neutral, PublicKeyToken=02f4313b97e3f583, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\NDepend\NDepend.API.dll</HintPath>
+    </Reference>
     <Reference Include="NEdifis, Version=0.7.0.0, Culture=neutral, PublicKeyToken=68bd55412466663d, processorArchitecture=MSIL">
       <HintPath>..\packages\NEdifis.0.7.0\lib\net45\NEdifis.dll</HintPath>
     </Reference>

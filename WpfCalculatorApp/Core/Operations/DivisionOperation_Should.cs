@@ -1,15 +1,15 @@
 ﻿using System;
 using FluentAssertions;
+using NDepend.Attributes;
 using NEdifis;
 using NEdifis.Attributes;
-using NSubstitute;
-using NSubstitute.ExceptionExtensions;
 using NUnit.Framework;
 using WpfCalculatorApp.Exceptions;
 
 namespace WpfCalculatorApp.Core.Operations
 {
     [TestFixtureFor(typeof(DivisionOperation))]
+    [UncoverableByTest]
     // ReSharper disable once InconsistentNaming
     internal class DivisionOperation_Should
     {

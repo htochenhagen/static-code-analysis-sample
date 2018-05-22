@@ -27,11 +27,11 @@
         <!-- <FunctionMask> Function mask </FunctionMask> -->
       </FilterEntry>
     </IncludeFilters>
-    <ExcludeFilters>
+    <!-- <ExcludeFilters>
       <FilterEntry>
         <ClassMask>*_Should*</ClassMask>
       </FilterEntry>
-    </ExcludeFilters>
+    </ExcludeFilters> -->
   </Filters>
  
   <!-- Attribute filters. It's possible to use asterisks as wildcard symbols.

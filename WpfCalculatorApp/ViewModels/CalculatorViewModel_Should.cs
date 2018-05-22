@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading;
 using FluentAssertions;
+using NDepend.Attributes;
 using NEdifis;
 using NEdifis.Attributes;
 using NUnit.Framework;
@@ -10,6 +11,7 @@ using WpfCalculatorApp.Helpers;
 namespace WpfCalculatorApp.ViewModels
 {
     [TestFixtureFor(typeof(CalculatorViewModel))]
+    [UncoverableByTest]
     // ReSharper disable once InconsistentNaming
     internal class CalculatorViewModel_Should
     {

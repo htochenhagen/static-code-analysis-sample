@@ -1,11 +1,13 @@
 using System;
 using FluentAssertions;
+using NDepend.Attributes;
 using NEdifis.Attributes;
 using NUnit.Framework;
 
 namespace WpfCalculatorApp.Properties
 {
-    [TestFixtureFor(typeof(WpfCalculatorApp.Properties.Config))]
+    [TestFixtureFor(typeof(Config))]
+    [UncoverableByTest]
     // ReSharper disable InconsistentNaming
     internal class Config_Should
     {
