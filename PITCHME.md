@@ -62,8 +62,12 @@ Statisches Software-Testverfahren zur Compile-Zeit. Dient dem Aufspüren von Feh
 
 * Definition: Methode zur Bewertung der Qualität eines Codes
 * Klassifizierung: 
- * Code-Metriken: Applikation, Assemblies, Namespaces, Types, Methods, Fields
- * Technical Debt Metrik
+ * Applikation
+ * Assemblies
+ * Namespaces
+ * Types
+ * Methods
+ * Fields
  
 ---
 
