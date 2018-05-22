@@ -41,6 +41,8 @@
     - Misst ganz allgemein die Komplexität eines Softwaremoduls
     - Grundlage ist die Anzahl der Verzweigungen in einem Codeabschnitt
     - Obere Schranke für minimale Anzahl der Testfälle bei vollständiger Testabdeckung
+    - CC > 15 = Hard to understand and maintain
+    - CC > 30 = Extremely complex and should be split into smaller methods
 - Coverage
     -  Nur weil ein System eine hohe Testüberdeckung hat, müssen die geschriebenen Tests nicht automatisch eine gute Qualität haben und die richtigen Testfälle testen
     -  Dem testenden Entwickler gibt die Metrik eine gute Aussage darüber, ob ein Testfall noch nicht berücksichtig und umgesetzt wurde.
@@ -110,6 +112,10 @@
 - Pros&Cons gegenüber SonarQube
 - SOLID, YAGNI, KISS, DRY etc.
 - Anstatt von Anfang an eine saubere Architektur mit mehreren Schichten zugrunde zu legen, wird oft ein großer Monolith entwickelt. Die anfangs schnelle Entwicklungsgeschwindigkeit sinkt zunehmend, die Zahl der Fehler steigt und ein neues Merkmal wird immer teurer.
+- Vorgaben
+	- Eine Klasse darf nicht mehr als 220 Zeilen Code enthalten
+	- Nie mehr als 10 Methoden pro Klasse!
+	- Eine Methode sollte nicht über mehr als 20 Zeilen hinausgehen
 
 ## Todo
 - Unterschiedliche Stände einchecken, so dass im Vortrag keine Probleme beim wechseln entstehen
