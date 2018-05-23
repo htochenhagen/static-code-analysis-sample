@@ -93,4 +93,4 @@ Statisches Software-Testverfahren zur Compile-Zeit. Dient dem Aufspüren von Feh
   - <span style="font-size:22px">Visual Studio Integration</span>
   - <span style="font-size:22px">Integrationen für TeamCity, TFS und Co.</span>
 
-![NDepend Logo](/images/full_logo.jpg)
+![NDepend Logo](/images/logo.png)
