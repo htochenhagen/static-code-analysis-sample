@@ -19,6 +19,9 @@ Note:
 #### Erklärung
 Statisches Software-Testverfahren zur Compile-Zeit. Dient dem Aufspüren von Fehlern bzw. Schwachstellen. Hierzu wird der Quelltext einer Reihe formaler Prüfungen unterzogen.
 
+Note:
+Wer von euch hat denn schonmal eine statische Code-Analyse durchgeführt?
+
 ---
 
 ### <span style="color: #FE9D0E">Pros</span> statischer Codeanalyse
