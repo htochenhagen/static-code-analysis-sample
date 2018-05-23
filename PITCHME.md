@@ -112,7 +112,7 @@ Statisches Software-Testverfahren zur Compile-Zeit. Dient dem Aufspüren von Feh
 ### <span style="color: #FE9D0E">Quality Gates</span>
 
 #### Erklärung
-Im Quality Gate werden Grenzwerte für beliebige Kennzahlen eingerichtet, welche die Mindestanforderungen an die Qualität bestimmen. Dabei kann zwischen Bedingungen unterschieden werden, die immer erfüllt werden müssen, und solchen, bei denen dies über einen gewissen Zeitraum der Fall sein muss (z.B. Code-Abdeckung > 80%).
+Im QG werden **Grenzwerte** für beliebige Kennzahlen eingerichtet, welche die **Mindestanforderungen** an die Qualität bestimmen. Dabei kann zwischen Bedingungen unterschieden werden, die **immer** erfüllt werden müssen, und solchen, bei denen dies über einen **gewissen Zeitraum** der Fall sein muss (z.B. Code-Abdeckung > 80% für neuen Code).
 
 ---
 
