@@ -20,7 +20,7 @@ Note:
 Statisches Software-Testverfahren zur Compile-Zeit. Dient dem Aufspüren von Fehlern bzw. Schwachstellen. Hierzu wird der Quelltext einer Reihe formaler Prüfungen unterzogen.
 
 Note:
-Wer von euch hat denn schonmal eine statische Code-Analyse durchgeführt?
+* Wer von euch hat denn schonmal eine statische Code-Analyse durchgeführt?
 
 ---
 
