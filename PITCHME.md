@@ -79,7 +79,7 @@ Statisches Software-Testverfahren zur Compile-Zeit. Dient dem Aufspüren von Feh
  * Grundlage ist die Anzahl der Verzweigungen
    * <span style="font-size:22px">CC > 15 = Hard to understand and maintain</span>
    * <span style="font-size:22px">CC > 30 = Extremely complex and should be split into smaller methods</span>
- * Liefert minimale Anzahl der Testfälle bei vollständiger Testabdeckung
+ * Liefert minimale Anzahl der Testfälle
 * <span style="color: #FE9D0E">Code Coverage</span>: Check der Testüberdeckung
 
 ---
