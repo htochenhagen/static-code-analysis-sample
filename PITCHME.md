@@ -40,9 +40,9 @@ Statisches Software-Testverfahren zur Compile-Zeit. Dient dem Aufspüren von Feh
 * Laufendes Programm wird benötigt
 * Kontrollierte Ausführung von Testfällen
 * Beispiel Unit-Tests pro Testfall:
-  1. <span style="color: #FE9D0E">Arrange</span>: Defintion der Eingabe- und zu erwarteten Ausgabedaten
-  2. <span style="color: #FE9D0E">Act</span>: Ausführung der SUT Methode
-  3. <span style="color: #FE9D0E">Assert</span>: Vergleich der erzeugten mit den erwarteten Daten (Fehler bei Abweichungen)
+  <span style="font-size:22px">1. <span style="color: #FE9D0E">Arrange</span>: Defintion der Eingabe- und zu erwarteten Ausgabedaten</span>
+  <span style="font-size:22px">2. <span style="color: #FE9D0E">Act</span>: Ausführung der SUT Methode</span>
+  <span style="font-size:22px">3. <span style="color: #FE9D0E">Assert</span>: Vergleich der erzeugten mit den erwarteten Daten (Fehler bei Abweichungen)</span>
 
 ---
 
