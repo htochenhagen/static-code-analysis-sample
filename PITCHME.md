@@ -179,6 +179,13 @@ Gibt die Manntage an, die es **pro Jahr** kostet, wenn die Korrektur ausbleibt
 * **Kritikalitäten** auf Komponenten-Ebene bestimmen
 * Alternativ mindest. **Code-Coverage** durchführen
 
+Note:
+Kritikalitätswerte zwischen eins und fünf bestimmen den Grad an zu leistender Code-Coverage 
+* Kritikalität 1: 20 Prozent
+* Kritikalität 2: 40 Prozent
+* ...
+* Kritikalität 4: 80 Prozent
+
 ---
 
 ### <span style="color: #FE9D0E">The End</span>
