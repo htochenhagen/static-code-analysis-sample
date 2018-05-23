@@ -74,13 +74,13 @@ Statisches Software-Testverfahren zur Compile-Zeit. Dient dem Aufspüren von Feh
 
 ### Code Metriken <span style="color: #FE9D0E">Beispiele</span>
  
-* LOC: Check auf SRP/Separation of Concerns
-* CC (McCabe-Metrik): Misst ganz allgemein die Komplexität eines Softwaremoduls
+* <span style="color: #FE9D0E">LOC</span>: Check auf SRP/Separation of Concerns
+* <span style="color: #FE9D0E">CC (McCabe-Metrik)</span>: Misst ganz allgemein die Komplexität eines Softwaremoduls
  * Grundlage ist die Anzahl der Verzweigungen in einem Codeabschnitt
    * <span style="font-size:22px">CC > 15 = Hard to understand and maintain</span>
    * <span style="font-size:22px">CC > 30 = Extremely complex and should be split into smaller methods</span>
  * Obere Schranke für minimale Anzahl der Testfälle bei vollständiger Testabdeckung
-* Coverage: Check der Testüberdeckung
+* <span style="color: #FE9D0E">Code Coverage</span>: Check der Testüberdeckung
 
 ---
 
