@@ -1,4 +1,4 @@
-## Softwarequalität messen & verbessern mit <span style="color: #FE9D0E">NDepend</span>
+### Softwarequalität messen & verbessern mit <span style="color: #FE9D0E">NDepend</span>
 
 - Entwickler: Patrick Smacchia
 - Erscheinungsdatum: April 2004
