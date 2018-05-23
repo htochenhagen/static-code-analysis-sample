@@ -145,7 +145,6 @@ Gibt die Manntage an, die es **pro Jahr** kostet, wenn die Korrektur ausbleibt
 
 * Anzeige/Vergleich von Metriken, Quality Gates ...
 * Überwachen von Trends
-* Vergleich von Quellcode
 * Visualisierung von Abhängigkeiten, Tree-Maps ...
 * Drilldown-Funktionalität (Quellcode)
 * Erstellen von Berichten
