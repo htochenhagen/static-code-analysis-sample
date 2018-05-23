@@ -25,7 +25,7 @@ Statisches Software-Testverfahren zur Compile-Zeit. Dient dem Aufspüren von Feh
 
 ---
 
-### <span style="color: #FE9D0E">Pros</span> statischer Codeanalyse
+### <span style="color: #FE9D0E">Pros</span> Fortsetzung
 
 * Stärkt Wissen über **Qualitätsprobleme** der Entwickler
 * **Einheitliches** Verständnis von Qualitätszielen
