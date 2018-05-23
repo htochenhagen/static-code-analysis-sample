@@ -50,8 +50,8 @@ Statisches Software-Testverfahren zur Compile-Zeit. Dient dem Aufspüren von Feh
 
 *	Übersicht **Gesundheitszustand** des Systems
 * **Hohe** Softwarequalität <span style="font-size:22px">(Skalierbar, Wiederholbar, Änderbar)</span>
-*	**Einheitliche** Vorgaben (Rules, Quality Gates)
-*	CI/CD-Integration (Quality Gates Fails)
+*	**Einheitliche** Vorgaben <span style="font-size:22px">(Rules, Quality Gates)</span>
+*	CI/CD-Integration <span style="font-size:22px">(Quality Gates Fails)</span>
 *	Vermeiden von **teuren** Refaktorisierungen
 
 ![Motivation](/images/Motivation.png)
