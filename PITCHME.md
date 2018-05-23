@@ -100,8 +100,8 @@ Statisches Software-Testverfahren zur Compile-Zeit. Dient dem Aufspüren von Feh
 ### <span style="color: #FE9D0E">Issues, Rules ...</span>
 
 * Rules: 
-  * Es existieren vorgefertigte Regelsätze 
-  * Eigene Regelsätze können definiert werden
+  * Es existieren **vorgefertigte** Regelsätze 
+  * **Eigene** Regelsätze können definiert werden
   * Code based rules (NDepend API)
 * Issues: <span style="font-size:22px">Einstufung in Blocker/Critical/High/Medium/Low</span>
 * Code Smells: <span style="font-size:22px">Qualitative Schwachstellen (z.B. Software-Klone)</span>
