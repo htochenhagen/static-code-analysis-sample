@@ -6,11 +6,11 @@
 ![NDepend Logo](/images/full_logo.jpg)
 
 Note:
-Kennt Ihr das, dass man tagelang eine Software refaktorisieren musste?
-Wäre das nicht schön, es gar nicht dazu kommen zu lassen?
-Wer von euch möchte nicht gerne ein besserer Entwickler werden, am Besten Clean Code Paradigmen praktizieren?
-Wer von euch wünscht sich nicht, den Code seines Kollegen zu öffnen und sich direkt und mühelos zurecht zu finden?
-Wer wünscht sich nicht, die in einem Projekt erlangte Software-Qualität mit in das nächste Projekt zu nehmen?
+* Kennt Ihr das, dass man tagelang eine Software refaktorisieren musste?
+* Wäre das nicht schön, es gar nicht dazu kommen zu lassen?
+* Wer von euch möchte nicht gerne ein besserer Entwickler werden, am Besten Clean Code Paradigmen praktizieren?
+* Wer von euch wünscht sich nicht, den Code seines Kollegen zu öffnen und sich direkt und mühelos zurecht zu finden?
+* Wer wünscht sich nicht, die in einem Projekt erlangte Software-Qualität mit in das nächste Projekt zu nehmen?
 
 ---
 
