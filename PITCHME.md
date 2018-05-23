@@ -18,19 +18,19 @@ Statisches Software-Testverfahren zur Compile-Zeit. Dient dem Aufspüren von Feh
 
 * Gezielte Analyse ohne Ausführung der Software
 * Sicherstellung innerer Softwarequalität
-  * Ermittlung von Kennzahlen zu Architektur, Design und Komplexität
-  * Ermittlung von Duplikaten, Dead Code, potenziellen Bugs
-  * Einbeziehung der Code Coverage Ergebnisse
-  * Einhaltung von Entwicklungsrichtlinien sowie Code-Dokumentationen
+  * Ermittlung von **Kennzahlen** zu Architektur, Design und Komplexität
+  * Ermittlung von **Duplikaten**, **Dead Code**, potenziellen **Bugs**
+  * Einbeziehung der **Code Coverage** Ergebnisse
+  * Einhaltung von **Entwicklungsrichtlinien** sowie **Code-Dokumentationen**
 
 ---
 
 ### <span style="color: #FE9D0E">Pros</span> statischer Codeanalyse
 
-* Stärkt Wissen über Qualitätsprobleme der Entwickler
-* Einheitliches Verständnis von Qualitätszielen
-* Durch Metriken zyklisch prüfbar und auswertbar
-* Qualität wird explizit eingefordert durch Richtlinien/Vorgaben
+* Stärkt Wissen über **Qualitätsprobleme** der Entwickler
+* **Einheitliches** Verständnis von Qualitätszielen
+* Durch Metriken **zyklisch** prüfbar und auswertbar
+* Qualität wird **explizit** eingefordert durch Richtlinien/Vorgaben
 * ...
 
 ---
@@ -48,11 +48,12 @@ Statisches Software-Testverfahren zur Compile-Zeit. Dient dem Aufspüren von Feh
 
 ### <span style="color: #FE9D0E">Motivation</span>
 
-*	Übersicht Gesundheitszustand des Systems
-* Hohe Softwarequalität (Skalierbar, Wiederholbar, Änderbar)
-*	Einheitliche Vorgaben (Rules, Quality Gates)
+*	Übersicht **Gesundheitszustand** des Systems
+* **Hohe** Softwarequalität 
+(Skalierbar, Wiederholbar, Änderbar)
+*	**Einheitliche** Vorgaben (Rules, Quality Gates)
 *	CI/CD-Integration (Quality Gates Fails)
-*	Vermeiden von teuren Refaktorisierungen
+*	Vermeiden von **teuren** Refaktorisierungen
 
 ![Motivation](/images/Motivation.png)
 
@@ -63,12 +64,12 @@ Statisches Software-Testverfahren zur Compile-Zeit. Dient dem Aufspüren von Feh
 * Definition: Methode zur Bewertung der Qualität eines Codes
 * <span style="color: #FE9D0E">Indikatoren</span>, keine definitiven Aussagen!
 * Klassifizierung: 
-  * Applikation
-  * Assemblies
-  * Namespaces
-  * Types
-  * Methods
-  * Fields
+  * <span style="font-size:22px">Applikation</span>
+  * <span style="font-size:22px">Assemblies</span>
+  * <span style="font-size:22px">Namespaces</span>
+  * <span style="font-size:22px">Types</span>
+  * <span style="font-size:22px">Methods</span>
+  * <span style="font-size:22px">Fields</span>
  
 ---
 
