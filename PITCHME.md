@@ -136,10 +136,10 @@ Gibt die Manntage an, die es **pro Jahr** kostet, wenn die Korrektur ausbleibt
 
 ### <span style="color: #FE9D0E">NDepend Funktionen</span>
 
-* Anzeige/Vergleich von Code-Metriken, Quality Gates ...
+* Anzeige/Vergleich von Metriken, Quality Gates ...
 * Überwachen von Trends
 * Vergleich von Quellcode
-* Anzeige von Abhängigkeiten, Tree-Maps, „Zone of Pain“
+* Visualisierung von Abhängigkeiten, Tree-Maps ...
 * Drilldown-Funktionalität (Quellcode)
 * Erstellen von Berichten
 * Suchen & Filtern
