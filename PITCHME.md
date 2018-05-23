@@ -40,9 +40,9 @@ Statisches Software-Testverfahren zur Compile-Zeit. Dient dem Aufspüren von Feh
 * Laufendes Programm wird benötigt
 * Kontrollierte Ausführung von Testfällen
 * Beispiel Unit-Tests pro Testfall:
- 1. Arrange: Defintion der Eingabe- und zu erwarteten Ausgabedaten
- 2. Act: Ausführung der SUT Methode
- 3. Assert: Vergleich der erzeugten mit den erwarteten Daten (Fehler bei Abweichungen)
+  1. Arrange: Defintion der Eingabe- und zu erwarteten Ausgabedaten
+  2. Act: Ausführung der SUT Methode
+  3. Assert: Vergleich der erzeugten mit den erwarteten Daten (Fehler bei Abweichungen)
 
 ---
 
@@ -63,12 +63,12 @@ Statisches Software-Testverfahren zur Compile-Zeit. Dient dem Aufspüren von Feh
 * Definition: Methode zur Bewertung der Qualität eines Codes
 * <span style="color: #FE9D0E">Indikatoren</span>, keine definitiven Aussagen!
 * Klassifizierung: 
- * Applikation
- * Assemblies
- * Namespaces
- * Types
- * Methods
- * Fields
+  * Applikation
+  * Assemblies
+  * Namespaces
+  * Types
+  * Methods
+  * Fields
  
 ---
 
