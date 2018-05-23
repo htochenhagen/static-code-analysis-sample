@@ -167,6 +167,7 @@ Gibt die Manntage an, die es **pro Jahr** kostet, wenn die Korrektur ausbleibt
 * <span style="color: #FE9D0E">NDepend API</span>: <span style="font-size:22px">Eigene statische Analyse-Tools, Codebase Queries ...</span>
 * <span style="color: #FE9D0E">CQLinq</span> (Code Query through Linq): <span style="font-size:22px">Auf LINQ basierenden Abfragesprache zur Definition von NDepend Regeln etc.</span>
 * Vergleich zu <span style="color: #FE9D0E">SonarQube</span>
+* Navigation zwischen Solutions
 
 ---
 
