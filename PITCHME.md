@@ -149,7 +149,7 @@ Gibt die Manntage an, die es **pro Jahr** kostet, wenn die Korrektur ausbleibt
 
 ### <span style="color: #FE9D0E">NDepend Diagramme</span>
 
-* <span style="font-size:22px">„Zone of Pain“</span>: Pakete, die sich auf den äußeren Zonen befinden, sollten in jedem Fall umstrukturiert werden
-* <span style="font-size:22px">Abhängigkeits-Graph</span>: Zeigt Abhängigkeiten visuell an
-* <span style="font-size:22px">Abhängigkeits-Matrix</span>: Zeigt Abhängigkeiten in einer Matrix an
-* <span style="font-size:22px">Tree-Maps</span>: Helfen Muster zu erkennen, welche auf andere Art und Weise nicht erkannt werden können
+* <span style="color: #FE9D0E">„Zone of Pain“</span>: Pakete, die sich auf den äußeren Zonen befinden, sollten in jedem Fall umstrukturiert werden
+* <span style="color: #FE9D0E">Abhängigkeits-Graph</span>: Zeigt Abhängigkeiten visuell an
+* <span style="color: #FE9D0E">Abhängigkeits-Matrix</span>: Zeigt Abhängigkeiten in einer Matrix an
+* <span style="color: #FE9D0E">Tree-Maps</span>: Helfen Muster zu erkennen, welche auf andere Art und Weise nicht erkannt werden können
