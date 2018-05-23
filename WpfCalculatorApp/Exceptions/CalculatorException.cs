@@ -1,8 +1,10 @@
 ﻿using System;
+using NDepend.Attributes;
 
 namespace WpfCalculatorApp.Exceptions
 {
-    public class CalculatorException : ApplicationException
+    [UncoverableByTest]
+    public class CalculatorException : Exception
     {
         public CalculatorException()
         {

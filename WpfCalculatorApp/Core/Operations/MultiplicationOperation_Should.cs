@@ -8,8 +8,9 @@ namespace WpfCalculatorApp.Core.Operations
 {
     [TestFixtureFor(typeof(MultiplicationOperation))]
     [UncoverableByTest]
+    //[IsNotDeadCode]
     // ReSharper disable once InconsistentNaming
-    internal class MultiplicationOperation_Should
+    internal sealed class MultiplicationOperation_Should
     {
 
         [Test]

@@ -8,8 +8,9 @@ namespace WpfCalculatorApp.Core.Operations
 {
     [TestFixtureFor(typeof(CosineOperation))]
     [UncoverableByTest]
+    //[IsNotDeadCode]
     // ReSharper disable once InconsistentNaming
-    internal class CosineOperation_Should
+    internal sealed class CosineOperation_Should
     {
 
         [Test]

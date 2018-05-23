@@ -10,15 +10,17 @@ using WpfCalculatorApp.Helpers;
 
 namespace WpfCalculatorApp.ViewModels
 {
-    [TestFixtureFor(typeof(CalculatorViewModel))]
+    //[IsNotDeadCode]
     [UncoverableByTest]
+    [TestFixtureFor(typeof(CalculatorViewModel))]
     // ReSharper disable once InconsistentNaming
-    internal class CalculatorViewModel_Should
+    internal sealed class CalculatorViewModel_Should
     {
 
         private CalculatorHelper _calculatorHelper;
         private Calculator _calculator;
 
+        //[IsNotDeadCode]
         [SetUp]
         public void Setup()
         {
@@ -31,6 +33,7 @@ namespace WpfCalculatorApp.ViewModels
         [Apartment(ApartmentState.STA)]
         [STAThread]
         [Test]
+        //[IsNotDeadCode]
         public void Be_Creatable()
         {
             var ctx = new ContextFor<CalculatorViewModel>();
@@ -45,6 +48,7 @@ namespace WpfCalculatorApp.ViewModels
         [TestCase("3", "2", "5")]
         [TestCase("-3", "2,34", "-0,66")]
         [TestCase("2.100", "-300", "1.800")]
+        //[IsNotDeadCode]
         public void Do_Press_Plus_Sign(string firstOperand, string secondOperand, string result)
         {
             var sut = new CalculatorViewModel(_calculator, _calculatorHelper);
@@ -66,6 +70,7 @@ namespace WpfCalculatorApp.ViewModels
         [TestCase("3", "2", "1")]
         [TestCase("-3", "2,34", "-5,34")]
         [TestCase("2.100", "-300", "2.400")]
+        //[IsNotDeadCode]
         public void Do_Press_Minus_Sign(string firstOperand, string secondOperand, string result)
         {
             var sut = new CalculatorViewModel(_calculator, _calculatorHelper);
@@ -87,6 +92,7 @@ namespace WpfCalculatorApp.ViewModels
         [TestCase("3", "2", "6")]
         [TestCase("-3", "3", "-9")]
         [TestCase("2.100", "-300", "-630.000")]
+        //[IsNotDeadCode]
         public void Do_Press_X_Letter(string firstOperand, string secondOperand, string result)
         {
             var sut = new CalculatorViewModel(_calculator, _calculatorHelper);
@@ -108,6 +114,7 @@ namespace WpfCalculatorApp.ViewModels
         [TestCase("3", "3", "1")]
         [TestCase("-3", "3", "-1")]
         [TestCase("2.100", "-300", "-7")]
+        //[IsNotDeadCode]
         public void Do_Press_Percentage_Sign(string firstOperand, string secondOperand, string result)
         {
             var sut = new CalculatorViewModel(_calculator, _calculatorHelper);
@@ -127,6 +134,7 @@ namespace WpfCalculatorApp.ViewModels
         [STAThread]
         [Test]
         [TestCase("0", "1")]
+        //[IsNotDeadCode]
         public void Do_Press_Cosinus(string firstOperand, string result)
         {
             var sut = new CalculatorViewModel(_calculator, _calculatorHelper);
@@ -142,6 +150,7 @@ namespace WpfCalculatorApp.ViewModels
         [STAThread]
         [Test]
         [TestCase("0", "0")]
+        //[IsNotDeadCode]
         public void Do_Press_Sinus(string firstOperand, string result)
         {
             var sut = new CalculatorViewModel(_calculator, _calculatorHelper);
@@ -159,6 +168,7 @@ namespace WpfCalculatorApp.ViewModels
         [TestCase("3", "3", "1")]
         [TestCase("-3", "3", "-1")]
         [TestCase("2.100", "-300", "-7")]
+        //[IsNotDeadCode]
         public void Do_Press_Equal_Sign(string firstOperand, string secondOperand, string result)
         {
             var sut = new CalculatorViewModel(_calculator, _calculatorHelper);
@@ -180,6 +190,7 @@ namespace WpfCalculatorApp.ViewModels
         [TestCase("3", "3", "33")]
         [TestCase("4", "3", "43")]
         [TestCase("0", "3", "3")]
+        //[IsNotDeadCode]
         public void Do_Press_Number(string firstValue, string secondValue, string result)
         {
             var sut = new CalculatorViewModel(_calculator, _calculatorHelper);
@@ -195,6 +206,7 @@ namespace WpfCalculatorApp.ViewModels
         [TestCase("3", "3", "3,3")]
         [TestCase("4", "3", "4,3")]
         [TestCase("0", "3", "0,3")]
+        //[IsNotDeadCode]
         public void Do_Press_Decimal_Separator(string firstValue, string secondValue, string result)
         {
             var sut = new CalculatorViewModel(_calculator, _calculatorHelper);
@@ -211,6 +223,7 @@ namespace WpfCalculatorApp.ViewModels
         [TestCase("3", "-3")]
         [TestCase("-4", "4")]
         [TestCase("0", "-0")]
+        //[IsNotDeadCode]
         public void Do_Press_Plus_And_Minus_Sign(string value, string result)
         {
             var sut = new CalculatorViewModel(_calculator, _calculatorHelper);
@@ -225,6 +238,7 @@ namespace WpfCalculatorApp.ViewModels
         [TestCase("3")]
         [TestCase("-3")]
         [TestCase("2.100")]
+        //[IsNotDeadCode]
         public void Do_Press_Clear(string firstOperand)
         {
             var ctx = new ContextFor<CalculatorViewModel>();

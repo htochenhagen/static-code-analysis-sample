@@ -3,9 +3,13 @@ using System.Linq;
 using System.Reflection;
 using System.Threading;
 using System.Windows;
+using NDepend.Attributes;
 
 namespace WpfCalculatorApp.Extensions
 {
+    [FullCovered]
+    [UncoverableByTest]
+    //[IsNotDeadCode]
     public static class Extensions
     {
 

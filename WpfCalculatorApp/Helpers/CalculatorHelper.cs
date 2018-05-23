@@ -2,6 +2,7 @@
 using System.Globalization;
 using System.Threading;
 using System.Windows;
+using NDepend.Attributes;
 using WpfCalculatorApp.Core.Operations;
 using WpfCalculatorApp.Exceptions;
 using WpfCalculatorApp.Extensions;
@@ -11,6 +12,7 @@ namespace WpfCalculatorApp.Helpers
 {
     public class CalculatorHelper : ICalculatorHelper
     {
+        [UncoverableByTest]
         public void HandleCalculatorErrors(Action action)
         {
             try

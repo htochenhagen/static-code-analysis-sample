@@ -6,8 +6,9 @@ namespace WpfCalculatorApp
 {
     [TestFixtureFor(typeof(Program))]
     [UncoverableByTest]
+    //[IsNotDeadCode]
     // ReSharper disable InconsistentNaming
-    internal class Program_Should
+    internal sealed class Program_Should
     {
         [Test]
         [Explicit]

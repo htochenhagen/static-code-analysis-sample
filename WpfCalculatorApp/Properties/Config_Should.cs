@@ -8,8 +8,9 @@ namespace WpfCalculatorApp.Properties
 {
     [TestFixtureFor(typeof(Config))]
     [UncoverableByTest]
+    //[IsNotDeadCode]
     // ReSharper disable InconsistentNaming
-    internal class Config_Should
+    internal sealed class Config_Should
     {
         [Test]
         public void Use_ConfigService()

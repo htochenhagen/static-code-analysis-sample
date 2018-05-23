@@ -7,7 +7,7 @@ using WpfCalculatorApp.ViewModels;
 
 namespace WpfCalculatorApp.Bootstrapping.Modules
 {
-    internal class ApplicationModule : Module
+    internal sealed class ApplicationModule : Module
     {
         protected override void Load(ContainerBuilder builder)
         {

@@ -9,8 +9,9 @@ namespace WpfCalculatorApp.Helpers
 {
     [TestFixtureFor(typeof(CalculatorHelper))]
     [UncoverableByTest]
+    //[IsNotDeadCode]
     // ReSharper disable once InconsistentNaming
-    internal class CalculatorHelper_Should
+    internal sealed class CalculatorHelper_Should
     {
         [Test]
         public void Be_Creatable()
