@@ -94,3 +94,12 @@ Statisches Software-Testverfahren zur Compile-Zeit. Dient dem Aufspüren von Feh
   - <span style="font-size:22px">Integrationen für TeamCity, TFS und Co.</span>
 
 ![NDepend Logo](/images/full_logo_width200.jpg)
+
+---
+
+### <span style="color: #FE9D0E">Technical Debt</span>
+
+#### Erklärung
+Sie beschreibt, wie viel Zeit investiert werden muss, um die bestehenden Qualitätsmängel vollständig zu beheben. Wir schulden dem System als X Tage um es in Ordnung zu bringen. Die technische Schuld ist der Hauptindikator für Softwarequalität.
+
+Link: https://martinfowler.com/bliki/TechnicalDebt.html
