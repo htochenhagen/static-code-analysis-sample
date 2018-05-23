@@ -89,8 +89,8 @@ Statisches Software-Testverfahren zur Compile-Zeit. Dient dem Aufspüren von Feh
 * Prüfung von Code mit Hilfe von Metriken
 * „Technical Debt Management“
 * Versionen:
- * Standalone (Visual NDepend)
- * Visual Studio Integration
- * Integrationen für TeamCity, TFS und Co.
+  * Standalone (Visual NDepend)
+  * Visual Studio Integration
+  * Integrationen für TeamCity, TFS und Co.
 
 ![NDepend Logo](/images/full_logo.jpg)
