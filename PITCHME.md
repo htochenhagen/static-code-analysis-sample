@@ -171,3 +171,9 @@ Gibt die Manntage an, die es **pro Jahr** kostet, wenn die Korrektur ausbleibt
 * **Regelmäßiges** (Wöchentliches?) Team-Review der NDepend-Ergebnisse/Analysen/Auswertungen
 * **Kritikalitäten** auf Komponenten-Ebene bestimmen
 * Als Alternative zumindest **Code-Coverage** durchführen
+
+---
+
+### <span style="color: #FE9D0E">Empfehlungen</span>
+
+![Danke](/images/ThankYou.jpg)
