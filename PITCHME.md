@@ -168,12 +168,12 @@ Gibt die Manntage an, die es **pro Jahr** kostet, wenn die Korrektur ausbleibt
 
 * Klare Empfehlung für **Produktentwicklung**!
 * Evtl. Einbinden in den **CI/CD-Prozess**
-* **Regelmäßiges** (Wöchentliches?) Team-Review der NDepend-Ergebnisse/Analysen/Auswertungen
+* **Regelmäßiges** (Wöchentliches?) Team-Review der NDepend-Ergebnisse
 * **Kritikalitäten** auf Komponenten-Ebene bestimmen
-* Als Alternative zumindest **Code-Coverage** durchführen
+* Alternativ zumindest **Code-Coverage** durchführen
 
 ---
 
-### <span style="color: #FE9D0E">Empfehlungen</span>
+### <span style="color: #FE9D0E">The End</span>
 
 ![Danke](/images/ThankYou.jpg)
