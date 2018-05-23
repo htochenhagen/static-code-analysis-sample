@@ -97,6 +97,18 @@ Statisches Software-Testverfahren zur Compile-Zeit. Dient dem Aufspüren von Feh
 
 ---
 
+### <span style="color: #FE9D0E">Issues, Rules ...</span>
+
+* Rules: 
+  * Es existieren vorgefertigte Regelsätze 
+  * Eigene Regelsätze können definiert werden
+  * Code based rules (NDepend API)
+* Issues: Einstufung in Blocker/Critical/High/Medium/Low
+* Code Smells: Qualitative Schwachstellen (z.B. Software-Klone)
+* Quality Gates, Technical Debt, Annual Interest ...
+
+---
+
 ### <span style="color: #FE9D0E">Technical Debt</span>
 
 #### Erklärung
