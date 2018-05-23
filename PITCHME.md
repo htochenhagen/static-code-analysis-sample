@@ -60,7 +60,7 @@ Statisches Software-Testverfahren zur Compile-Zeit. Dient dem Aufspüren von Feh
 
 ### Code <span style="color: #FE9D0E">Metriken</span>
 
-* Definition: Methode zur Bewertung der Qualität eines Codes
+* Definition: <span style="font-size:22px">Methode zur Bewertung der Qualität eines Codes</span>
 * <span style="color: #FE9D0E">Indikatoren</span>, keine definitiven Aussagen!
 * Klassifizierung: 
   * <span style="font-size:22px">Applikation</span>
