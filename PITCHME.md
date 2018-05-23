@@ -85,9 +85,9 @@ Statisches Software-Testverfahren zur Compile-Zeit. Dient dem Aufspüren von Feh
 ---
 
 ### <span style="color: #FE9D0E">NDepend</span>
-* Statische Codeanalyse von .NET-Quelltext
-* Prüfung von Code mit Hilfe von Metriken
-* „Technical Debt Management“
+* Statische Codeanalyse von **.NET-Quelltext**
+* Prüfung von Code mit Hilfe von **Metriken**
+* **„Technical Debt Management“**
 * Versionen:
   - <span style="font-size:22px">Standalone (Visual NDepend)</span>
   - <span style="font-size:22px">Visual Studio Integration</span>
