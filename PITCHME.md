@@ -122,3 +122,12 @@ Im QG werden **Grenzwerte** für beliebige Kennzahlen eingerichtet, welche die *
 Sie beschreibt, wie viel Zeit (Manntage) investiert werden muss, um die bestehenden Qualitätsmängel vollständig zu beheben. Wir schulden dem System als X Tage um es in Ordnung zu bringen. Die technische Schuld ist der Hauptindikator für Softwarequalität.
 
 https://martinfowler.com/bliki/TechnicalDebt.html
+
+---
+
+### <span style="color: #FE9D0E">Annual Interest</span>
+
+#### Erklärung
+Gibt die Manntage an, die es pro Jahr kostet, wenn die Korrektur ausbleibt
+
+![Kosten](/images/AV-Kosten-300x168.jpg)
