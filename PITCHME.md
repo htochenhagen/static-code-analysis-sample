@@ -103,8 +103,8 @@ Statisches Software-Testverfahren zur Compile-Zeit. Dient dem Aufspüren von Feh
   * Es existieren vorgefertigte Regelsätze 
   * Eigene Regelsätze können definiert werden
   * Code based rules (NDepend API)
-* Issues: Einstufung in Blocker/Critical/High/Medium/Low
-* Code Smells: Qualitative Schwachstellen (z.B. Software-Klone)
+* Issues: <span style="font-size:22px">Einstufung in Blocker/Critical/High/Medium/Low</span>
+* Code Smells: <span style="font-size:22px">Qualitative Schwachstellen (z.B. Software-Klone)</span>
 * Quality Gates, Technical Debt, Annual Interest ...
 
 ---
