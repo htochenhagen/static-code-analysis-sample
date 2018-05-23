@@ -119,6 +119,6 @@ Im QG werden **Grenzwerte** für beliebige Kennzahlen eingerichtet, welche die *
 ### <span style="color: #FE9D0E">Technical Debt</span>
 
 #### Erklärung
-Sie beschreibt, wie viel Zeit investiert werden muss, um die bestehenden Qualitätsmängel vollständig zu beheben. Wir schulden dem System als X Tage um es in Ordnung zu bringen. Die technische Schuld ist der Hauptindikator für Softwarequalität.
+Sie beschreibt, wie viel Zeit (Manntage) investiert werden muss, um die bestehenden Qualitätsmängel vollständig zu beheben. Wir schulden dem System als X Tage um es in Ordnung zu bringen. Die technische Schuld ist der Hauptindikator für Softwarequalität.
 
-Link: https://martinfowler.com/bliki/TechnicalDebt.html
+https://martinfowler.com/bliki/TechnicalDebt.html
