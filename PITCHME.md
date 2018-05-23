@@ -153,3 +153,21 @@ Gibt die Manntage an, die es **pro Jahr** kostet, wenn die Korrektur ausbleibt
 * <span style="color: #FE9D0E">Abhängigkeits-Graph</span>: <span style="font-size:22px">Zeigt Abhängigkeiten visuell an</span>
 * <span style="color: #FE9D0E">Abhängigkeits-Matrix</span>: <span style="font-size:22px">Zeigt Abhängigkeiten in einer Matrix an</span>
 * <span style="color: #FE9D0E">Tree-Maps</span>: <span style="font-size:22px">Helfen Muster zu erkennen, welche auf andere Art und Weise nicht erkannt werden können. Extrem nützlich um z.B. die Code Coverage zu visualisieren</span>
+
+---
+
+### <span style="color: #FE9D0E">NDepend ...</span>
+
+* <span style="color: #FE9D0E">NDepend API</span>: <span style="font-size:22px">Eigene statische Analyse-Tools, Codebase Queries ...</span>
+* <span style="color: #FE9D0E">CQLinq</span> (Code Query through Linq): <span style="font-size:22px">Auf LINQ basierenden Abfragesprache zur Definition von NDepend Regeln etc.</span>
+* Vergleich zu <span style="color: #FE9D0E">SonarQube</span>
+
+---
+
+### <span style="color: #FE9D0E">Empfehlungen</span>
+
+* Klare Empfehlung für **Produktentwicklung**!
+* Evtl. Einbinden in den **CI/CD-Prozess**
+* **Regelmäßiges** (Wöchentliches?) Team-Review der NDepend-Ergebnisse/Analysen/Auswertungen
+* **Kritikalitäten** auf Komponenten-Ebene bestimmen
+* Als Alternative zumindest **Code-Coverage** durchführen
