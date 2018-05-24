@@ -92,10 +92,6 @@ Note:
  * Liefert minimale Anzahl der Testfälle
 * <span style="color: #FE9D0E">Code Coverage</span>: Check der Testüberdeckung
 
-Note:
-* Zeige WPF-Taschenrechner-Beispielanwendung
-* Zeige Parallel Visual NDepend
-
 ---
 
 ### <span style="color: #FE9D0E">NDepend</span>
@@ -108,6 +104,10 @@ Note:
   - <span style="font-size:22px">Integrationen für TeamCity, TFS und Co.</span>
 
 ![NDepend Logo](/images/full_logo_width200.jpg)
+
+Note:
+* Zeige WPF-Taschenrechner-Beispielanwendung
+* Zeige Parallel Visual NDepend
 
 ---
 
