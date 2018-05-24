@@ -159,7 +159,8 @@ Gibt die Manntage an, die es **pro Jahr** kostet, wenn die Korrektur ausbleibt
 ![Kosten](/images/AV-Kosten-300x168.jpg)
 
 Note:
-* Zeige Version "demo_V5" der WPF-Taschenrechner-Beispielanwendung 
+* Switche auf "demo_V5"
+* Zeige Version "demo_V5" der WPF-Taschenrechner-Beispielanwendung im Vergleich zu "demo_V1"
 
 ---
 
