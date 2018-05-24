@@ -6,6 +6,11 @@
 ![NDepend Logo](/images/full_logo.jpg)
 
 Note:
+
+Kurze NDepend Erklärung.
+
+Ok, dann stelle ich direkt mal ein paar Fragen in die Runde.
+
 * Wer von euch hat schonmal tagelang eine Software refaktorisieren musste?
 * Wer von euch hat nicht  die Intention ein besserer Entwickler zu werden, am Besten Clean Code Paradigmen praktizieren?
 * Wer von euch hat nicht schon Code von einem Kollegen oder Vorgänger gesehen und darüber geflucht, da mann sich erstmal überhaupt nicht zurechtfindet?
