@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <NDepend AppName="NDepend" Platform="DotNet" FileWrittenByProductVersion="2018.1.1.9040">
   <OutputDir KeepXmlFiles="False">C:\Dev\git\static-code-analysis-sample\NDependOut</OutputDir>
   <Assemblies>
@@ -74,7 +74,7 @@
     <DebtSettings>
       <DebtFactor>1</DebtFactor>
       <AnnualInterestFactor>1</AnnualInterestFactor>
-      <DebtDefault>0</DebtDefault>
+      <DebtDefault>180000000000</DebtDefault>
       <AnnualInterestDefault>0</AnnualInterestDefault>
       <DebtStringFormat>$ManDay$</DebtStringFormat>
       <MoneyPerManHour>150</MoneyPerManHour>
@@ -85,15 +85,14 @@
       <NumberOfWorkHourPerDay>8</NumberOfWorkHourPerDay>
       <A2B_RatingThreshold>5</A2B_RatingThreshold>
       <B2C_RatingThreshold>10</B2C_RatingThreshold>
-      <C2D_RatingThreshold>20</C2D_RatingThreshold>
+      <C2D_RatingThreshold>17</C2D_RatingThreshold>
       <D2E_RatingThreshold>50</D2E_RatingThreshold>
       <Low2Medium_SeverityThreshold>1200000000</Low2Medium_SeverityThreshold>
       <Medium2High_SeverityThreshold>12000000000</Medium2High_SeverityThreshold>
       <High2Critical_SeverityThreshold>72000000000</High2Critical_SeverityThreshold>
       <Critical2Blocker_SeverityThreshold>360000000000</Critical2Blocker_SeverityThreshold>
     </DebtSettings>
-  </ProjectDebtSettings>
-  <Queries>
+  </ProjectDebtSettings><Queries>
     <Group Name="Quality Gates" Active="True" ShownInReport="True">
       <Query Active="True" DisplayList="True" DisplayStat="True" DisplaySelectionView="False" IsCriticalRule="False"><![CDATA[// <Name>Quality Gates Evolution</Name>
 from qg in QualityGates
@@ -11478,8 +11477,6 @@ select new {
       </Group>
     </Group>
     <Group Name="Own Rules" Active="True" ShownInReport="False" />
-  </Queries>
-  <WarnFilter>
+  </Queries><WarnFilter>
     <DontWarn>Assembly {NDepend.API} is referenced by {WpfCalculatorApp} but is not found.</DontWarn>
-  </WarnFilter>
-</NDepend>
+  </WarnFilter></NDepend>
