@@ -114,8 +114,9 @@ Note:
 ![NDepend Logo](/images/full_logo_width200.jpg)
 
 Note:
+* Erkläre Versionen
+* Zeige Erst Visual NDepend
 * Zeige Version "demo_V1" der WPF-Taschenrechner-Beispielanwendung 
-* Zeige Parallel Visual NDepend
 
 ---
 
