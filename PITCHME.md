@@ -92,6 +92,10 @@ Note:
  * Liefert minimale Anzahl der Testfälle
 * <span style="color: #FE9D0E">Code Coverage</span>: Check der Testüberdeckung
 
+Note:
+* Zeige WPF-Taschenrechner-Beispielanwendung
+* Zeige Parallel Visual NDepend
+
 ---
 
 ### <span style="color: #FE9D0E">NDepend</span>
