@@ -172,6 +172,9 @@ Note:
 * Suchen & Filtern
 * Dashboard individuell erweitern ...
 
+Note:
+* Zeige Version "demo_V5" der WPF-Taschenrechner-Beispielanwendung 
+
 ---
 
 ### <span style="color: #FE9D0E">NDepend Diagramme</span>
