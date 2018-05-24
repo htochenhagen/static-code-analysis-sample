@@ -106,7 +106,7 @@ Note:
 ![NDepend Logo](/images/full_logo_width200.jpg)
 
 Note:
-* Zeige WPF-Taschenrechner-Beispielanwendung
+* Zeige Version "demo_V1" der WPF-Taschenrechner-Beispielanwendung 
 * Zeige Parallel Visual NDepend
 
 ---
@@ -145,6 +145,9 @@ https://martinfowler.com/bliki/TechnicalDebt.html
 Gibt die Manntage an, die es **pro Jahr** kostet, wenn die Korrektur ausbleibt
 
 ![Kosten](/images/AV-Kosten-300x168.jpg)
+
+Note:
+* Zeige Version "demo_V5" der WPF-Taschenrechner-Beispielanwendung 
 
 ---
 
