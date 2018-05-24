@@ -137,6 +137,9 @@ Note:
 #### Erklärung
 Im QG werden **Grenzwerte** für beliebige Kennzahlen eingerichtet, welche die **Mindestanforderungen** an die Qualität bestimmen. Dabei kann zwischen Bedingungen unterschieden werden, die **immer** erfüllt werden müssen, und solchen, bei denen dies über einen **gewissen Zeitraum** der Fall sein muss (z.B. Code-Abdeckung > 80% für neuen Code).
 
+Note:
+* Erklärung Baseline
+
 ---
 
 ### <span style="color: #FE9D0E">Technical Debt</span>
