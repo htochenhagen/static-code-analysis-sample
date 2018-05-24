@@ -6,11 +6,14 @@
 ![NDepend Logo](/images/full_logo.jpg)
 
 Note:
-* Kennt Ihr das, dass man tagelang eine Software refaktorisieren musste?
-* Wäre das nicht schön, es gar nicht dazu kommen zu lassen?
-* Wer von euch möchte nicht gerne ein besserer Entwickler werden, am Besten Clean Code Paradigmen praktizieren?
-* Wer von euch wünscht sich nicht, den Code seines Kollegen zu öffnen und sich direkt und mühelos zurecht zu finden?
-* Wer wünscht sich nicht, die in einem Projekt erlangte Software-Qualität mit in das nächste Projekt zu nehmen?
+* Wer von euch hat schonmal tagelang eine Software refaktorisieren musste?
+* Wer von euch hat nicht  die Intention ein besserer Entwickler zu werden, am Besten Clean Code Paradigmen praktizieren?
+* Wer von euch hat nicht schon Code von einem Kollegen oder Vorgänger gesehen und darüber geflucht, da mann sich erstmal überhaupt nicht zurechtfindet?
+* Wer es nicht schön, die in einem Projekt erlangte Software-Qualität mit in das nächste Projekt zu nehmen?
+
+All das ist mit NDepend ohne Weiteres möglich!
+
+Bevor ich weiter auf NDepend eingehe möchte ich noch ein paar Basics abklopfen.
 
 ---
 
