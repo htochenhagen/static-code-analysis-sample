@@ -197,3 +197,6 @@ Kritikalitätswerte zwischen eins und fünf bestimmen den Grad an zu leistender 
 ### <span style="color: #FE9D0E">The End</span>
 
 ![Danke](/images/ThankYou.jpg)
+
+Vortrag und Beispielprojekt auf:
+https://github.com/htochenhagen/static-code-analysis-sample
