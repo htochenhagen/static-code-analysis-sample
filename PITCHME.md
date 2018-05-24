@@ -9,11 +9,11 @@ Note:
 
 Kurze NDepend Erklärung.
 
-Ok, dann stelle ich direkt mal ein paar Fragen in die Runde.
+Ok, dann möchte ich vorab mal ein paar Fragen in die Runde stellen.
 
+* Wer von euch hat nicht schon Code von einem Kollegen oder Vorgänger gesehen und darüber geflucht, da mann sich erstmal überhaupt nicht zurechtfindet?
 * Wer von euch hat schonmal tagelang eine Software refaktorisieren musste?
 * Wer von euch hat nicht  die Intention ein besserer Entwickler zu werden, am Besten Clean Code Paradigmen praktizieren?
-* Wer von euch hat nicht schon Code von einem Kollegen oder Vorgänger gesehen und darüber geflucht, da mann sich erstmal überhaupt nicht zurechtfindet?
 * Wer es nicht schön, die in einem Projekt erlangte Software-Qualität mit in das nächste Projekt zu nehmen?
 
 All das ist mit NDepend ohne Weiteres möglich!
